@@ -62,7 +62,7 @@ TH1F *hpileupsmear;
 double sn_mass=0.1;
 
 int chisqcount=0;
-double Min=0.4;
+double Min=0.5;
 double Max=0.6;
 std::vector <TH1F*> histo(10);
 
@@ -528,7 +528,7 @@ ifstream spectrum_file;
   TH2F *hangleerrorqpe2=new TH2F("hangleerrorqpe2","2D",1200,-1.0E-2,1E-2,400,0,1.13);
  
 
-  TFile *fout=new TFile(Form("/home/fatemigh/projects/rpp-jillings/fatemigh/sterile/Likelihood/fitresultnoconstrain/fitresultswithpileupthetanoconstrain%i.root",ifile),"recreate");
+  TFile *fout=new TFile(Form("/scratch/fatemigh/fitresultnoconstrain/fitresultswithpileupthetanoconstrain%i.root",ifile),"recreate");
  
   for (int ifit=0; ifit<10;ifit++){
  
