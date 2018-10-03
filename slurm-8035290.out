@@ -1,0 +1,3548 @@
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version   5.34/36      5 April 2016   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.34/36 (v5-34-36@v5-34-36, Apr 05 2016, 10:25:45 on linuxx8664gcc)
+
+CINT/ROOT C/C++ Interpreter version 5.18.00, July 2, 2010
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+Loading root init file.
+The rat/rootinit.C file loaded the DEAP style for you, which is available from the fStyle pointer.
+DEAP style applied. 
+RAT: Libraries loaded.
+
+Processing /home/fatemigh/projects/rpp-jillings/fatemigh/sterile/Likelihood/LikelihoodSterile_modified7.C+(187)...
+pased here
+566 lines read from file
+31
+spec_E  566
+Before entering fitting
+ **********
+ **    1 **SET PRINT           2
+ **********
+ **********
+ **    2 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 p0           5.58000e+05  1.67400e+05     no limits
+     2 p1           5.65000e-01  1.69500e-01     no limits
+     3 p2           0.00000e+00  3.00000e-01     no limits
+     4 p3           9.99871e-04  2.99961e-04     no limits
+ **********
+ **    3 **SET ERR         0.5
+ **********
+ **********
+ **    4 **SET PRINT           2
+ **********
+ **********
+ **    5 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **    6 **MIGRAD        1480        0.01
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-05
+ FCN=17457.2 FROM MIGRAD    STATUS=INITIATE       18 CALLS          19 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58000e+05   1.67400e+05   1.67400e+05  -3.64417e+01
+   2  p1           5.65000e-01   1.69500e-01   1.69500e-01  -1.13121e+08
+   3  p2           0.00000e+00   3.00000e-01   3.00000e-01   0.00000e+00
+   4  p3           9.99871e-04   2.99961e-04   2.99961e-04  -9.81107e+08
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+ FCN=491.422 FROM MIGRAD    STATUS=PROGRESS       34 CALLS          35 TOTAL
+                     EDM=1419.8    STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58442e+05   1.67400e+05   4.41664e+02  -8.33240e-01
+   2  p1           5.65142e-01   1.69500e-01   1.42425e-04  -2.55969e+06
+   3  p2           0.00000e+00   3.00000e-01  -0.00000e+00   0.00000e+00
+   4  p3           1.00163e-03   2.99961e-04   1.76299e-06   4.16725e+08
+                               ERR DEF= 0.5
+ FCN=56.5695 FROM MIGRAD    STATUS=PROGRESS      162 CALLS         163 TOTAL
+                     EDM=0.000503453    STRATEGY= 1  ERROR MATRIX UNCERTAINTY  14.7 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58487e+05   8.82191e+01   5.25069e+00  -3.92088e-03
+   2  p1           5.65152e-01   2.95811e-05  -1.72388e-06  -1.10991e+04
+   3  p2           0.00000e+00   4.90376e-04  -0.00000e+00   0.00000e+00
+   4  p3           9.99703e-04   6.16400e-08   1.95186e-09   7.37415e+05
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         1.7662e-04  8.0115e-01  1.0203e+00  2.1783e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=56.5112 FROM MIGRAD    STATUS=CONVERGED     260 CALLS         261 TOTAL
+                     EDM=2.31094e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58833e+05   2.72046e+02   2.66472e-01  -9.19180e-05
+   2  p1           5.65041e-01   8.78353e-05   2.69432e-07  -2.66981e+02
+   3  p2           0.00000e+00   1.86957e-02   9.59743e-05   0.00000e+00
+   4  p3           9.99706e-04   7.25264e-08   4.76697e-10   6.22383e+03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  7.401e+04 -2.389e-02 -3.619e-02  9.306e-06 
+ -2.389e-02  7.715e-09  1.146e-08 -3.040e-12 
+ -3.619e-02  1.146e-08  3.495e-04  9.233e-11 
+  9.306e-06 -3.040e-12  9.233e-11  5.260e-15 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99982   1.000 -1.000 -0.007  0.472
+        2  0.99982  -1.000  1.000  0.007 -0.477
+        3  0.08398  -0.007  0.007  1.000  0.068
+        4  0.55658   0.472 -0.477  0.068  1.000
+ EXTERNAL ERROR MATRIX.    NDIM=   4    NPAR=  4    ERR DEF=0.5
+  7.401e+04 -2.389e-02 -3.619e-02  9.306e-06 
+ -2.389e-02  7.715e-09  1.146e-08 -3.040e-12 
+ -3.619e-02  1.146e-08  3.495e-04  9.233e-11 
+  9.306e-06 -3.040e-12  9.233e-11  5.260e-15 
+ FCN=56.5112 FROM MIGRAD    STATUS=CONVERGED     260 CALLS         261 TOTAL
+                     EDM=2.31094e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  p0           5.58833e+05   2.72046e+02                            
+   2  p1           5.65041e-01   8.78353e-05                            
+   3  p2           0.00000e+00   1.86957e-02                            
+   4  p3           9.99706e-04   7.25264e-08                            
+                               ERR DEF= 0.5
+------------------------------------------
+Enering ROOFIt-------
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.58833e+05  1.00000e-01     no limits
+     2 Q            5.65000e-01  1.00000e-01     no limits
+     3 theta        0.00000e+00  1.00000e-01     no limits
+     4 pileup       9.99706e-04  1.00000e-01     no limits
+ **********
+ **    1 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37862e+11 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58833e+05   1.00000e-01   1.00000e-01  -4.82575e+00
+   2  Q            5.65000e-01   1.00000e-01   1.00000e-01  -6.72353e+07
+   3  theta        0.00000e+00   1.00000e-01   1.00000e-01   0.00000e+00
+   4  pileup       9.99706e-04   1.00000e-01   1.00000e-01  -9.18207e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2.37862e+11 FROM HESSE     STATUS=OK             27 CALLS          53 TOTAL
+                     EDM=2818.63    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58833e+05   2.87548e+01   2.66472e+00  -4.82585e+00
+   2  Q            5.65000e-01   2.37103e-06   1.00000e-03  -1.50032e+07
+   3  theta        0.00000e+00   1.84005e-03   1.00000e-01   0.00000e+00
+   4  pileup       9.99706e-04   9.24307e-08   1.00000e-02  -1.35977e+08
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37862e+11 FROM MIGRAD    STATUS=FAILED         77 CALLS          78 TOTAL
+                     EDM=35738.3    STRATEGY= 1  ERROR MATRIX UNCERTAINTY  68.3 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59060e+05   1.48830e+01   0.00000e+00   1.61982e+00
+   2  Q            5.64983e-01   8.58651e-07  -0.00000e+00   5.03286e+06
+   3  theta       -1.01210e-02   4.82271e-04   0.00000e+00  -1.91623e+05
+   4  pileup       9.99789e-04   9.24159e-08   0.00000e+00   2.40610e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  2.215e+02 -1.044e-05  3.968e-03 -3.378e-08 
+ -1.044e-05  7.373e-13 -9.862e-11 -5.480e-15 
+  3.968e-03 -9.862e-11  2.326e-07  4.556e-12 
+ -3.378e-08 -5.480e-15  4.556e-12  8.541e-15 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.90357   1.000 -0.817  0.553 -0.025
+        2  0.86533  -0.817  1.000 -0.238 -0.069
+        3  0.68784   0.553 -0.238  1.000  0.102
+        4  0.27955  -0.025 -0.069  0.102  1.000
+ ERR MATRIX APPROXIMATE
+ **********
+ **    2 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37862e+11 FROM MIGRAD    STATUS=INITIATE       16 CALLS          94 TOTAL
+                     EDM=1.1814e+06    STRATEGY= 1  ERROR MATRIX UNCERTAINTY  68.3 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59060e+05   1.48830e+01   0.00000e+00   1.61976e+00
+   2  Q            5.64983e-01   8.58651e-07  -0.00000e+00  -1.43657e+09
+   3  theta       -1.01210e-02   4.82271e-04   0.00000e+00  -7.76093e+04
+   4  pileup       9.99789e-04   9.24159e-08   0.00000e+00   2.52219e+07
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2.37862e+11 FROM HESSE     STATUS=OK             31 CALLS         184 TOTAL
+                     EDM=0.056177    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59008e+05   8.43794e+00   1.72595e+03   3.06317e-02
+   2  Q            5.64987e-01   5.37448e-07   5.54815e-04   8.98972e+04
+   3  theta       -1.05221e-02   9.53728e-04   1.11681e-01  -5.30330e+02
+   4  pileup       9.99763e-04   1.02104e-07   2.09851e-05   2.67693e+06
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=-2.37862e+11 FROM MIGRAD    STATUS=CONVERGED     128 CALLS         206 TOTAL
+                     EDM=37.4433    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.7 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59006e+05   8.07500e+00   0.00000e+00   2.10827e-02
+   2  Q            5.64987e-01   1.00000e+00  -0.00000e+00   9.22537e+04
+   3  theta       -9.34111e-03   1.00000e+00   0.00000e+00  -1.26801e+04
+   4  pileup       9.99709e-04   1.00000e+00   0.00000e+00  -1.20839e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  6.521e+01 -7.353e-07  4.394e-04 -2.057e-07 
+ -7.353e-07  1.000e+00 -6.738e-11 -1.629e-14 
+  4.394e-04 -6.738e-11  1.000e+00 -2.135e-12 
+ -2.057e-07 -1.629e-14 -2.135e-12  1.000e+00 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.00005   1.000 -0.000  0.000 -0.000
+        2  0.00000  -0.000  1.000 -0.000 -0.000
+        3  0.00005   0.000 -0.000  1.000 -0.000
+        4  0.00000  -0.000 -0.000 -0.000  1.000
+status of the fit-----000------0
+1  559006
+2  0.564987
+3  -0.00934111
+4  0.000999709
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.59006e+05  1.00000e-01     no limits
+     2 Q            5.64987e-01  1.00000e-01     no limits
+     3 theta       -9.34111e-03  1.00000e-01     no limits
+     4 pileup       9.99709e-04  1.00000e-01     no limits
+ **********
+ **    3 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37862e+11 FROM MIGRAD    STATUS=INITIATE       18 CALLS         225 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59006e+05   1.00000e-01   1.00000e-01   3.14444e-02
+   2  Q            5.64987e-01   1.00000e-01   1.00000e-01   5.40538e+06
+   3  theta       -9.34111e-03   1.00000e-01   1.00000e-01  -6.43457e+04
+   4  pileup       9.99709e-04   1.00000e-01   1.00000e-01  -9.18038e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2.37862e+11 FROM HESSE     STATUS=OK             29 CALLS         265 TOTAL
+                     EDM=0.380067    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59006e+05   2.25485e+01   2.66555e+00   3.13700e-02
+   2  Q            5.64987e-01   1.63111e-06   1.00000e-03   9.21998e+04
+   3  theta       -9.34111e-03   1.23455e-03   1.02036e-01  -4.56149e+02
+   4  pileup       9.99709e-04   9.24333e-08   1.00000e-02  -8.11980e+06
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -3.7552e-01  6.4491e-02  1.2680e+00  3.0431e+00
+ MINUIT WARNING IN MIGRAD  
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.378562 TO DIAGONAL.
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37862e+11 FROM MIGRAD    STATUS=FAILED        178 CALLS         385 TOTAL
+                     EDM=0.0992375    STRATEGY= 1      ERR MATRIX APPROXIMATE
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59003e+05   8.87286e+00   1.72593e+03  -1.58738e-03
+   2  Q            5.64987e-01   6.03044e-07   5.54826e-04  -9.52780e+03
+   3  theta       -9.18155e-03   4.84981e-04   2.79644e-01  -8.59506e+02
+   4  pileup       9.99742e-04   1.03502e-07   2.09848e-05  -6.61056e+05
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  7.873e+01  5.340e-07  1.887e-03 -8.016e-08 
+  5.340e-07  3.637e-13  1.865e-10 -9.598e-15 
+  1.887e-03  1.865e-10  2.352e-07  1.045e-11 
+ -8.016e-08 -9.598e-15  1.045e-11  1.071e-14 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.57689   1.000  0.100  0.438 -0.087
+        2  0.75014   0.100  1.000  0.638 -0.154
+        3  0.81427   0.438  0.638  1.000  0.208
+        4  0.52455  -0.087 -0.154  0.208  1.000
+ ERR MATRIX APPROXIMATE
+ **********
+ **    4 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37862e+11 FROM MIGRAD    STATUS=INITIATE        8 CALLS         393 TOTAL
+                     EDM=45.8163    STRATEGY= 1      ERR MATRIX APPROXIMATE
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59003e+05   8.87286e+00   1.72593e+03  -1.18235e-02
+   2  Q            5.64987e-01   6.03044e-07   5.54826e-04  -9.46016e+03
+   3  theta       -9.18155e-03   4.84981e-04   2.79644e-01  -2.75616e+04
+   4  pileup       9.99742e-04   1.03502e-07   2.09848e-05  -5.17199e+06
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -5.1064e-03  4.1909e-01  1.0736e+00  2.5124e+00
+ MINUIT WARNING IN MIGRAD  
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.007619 TO DIAGONAL.
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.2668e-04  5.8461e-01  8.6057e-01  2.5549e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.002682 TO DIAGONAL.
+ FCN=-2.37862e+11 FROM HESSE     STATUS=NOT POSDEF     29 CALLS         483 TOTAL
+                     EDM=0.0344753    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59004e+05   1.01326e+02   1.72593e+03   2.36039e-02
+   2  Q            5.64987e-01   3.26665e-05   9.49669e-05   6.89134e+04
+   3  theta       -9.13062e-03   1.13504e-03   7.77886e-02  -3.35208e+02
+   4  pileup       9.99744e-04   9.75120e-08   2.09849e-05   7.56964e+05
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -2.2854e-04  7.6315e-01  9.0954e-01  2.3275e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.002556 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37862e+11 FROM MIGRAD    STATUS=FAILED        149 CALLS         534 TOTAL
+                     EDM=0.284192    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58952e+05   1.06261e+02   6.90372e+02   5.73106e-02
+   2  Q            5.65004e-01   3.41811e-05   1.89934e-04   1.76993e+05
+   3  theta       -8.10442e-03   2.27780e-03   3.11154e-02  -1.23383e+02
+   4  pileup       9.99765e-04   9.46279e-08   8.39394e-06   8.25251e+06
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  1.129e+04 -3.622e-03  3.189e-03  1.384e-07 
+ -3.622e-03  1.168e-09  1.158e-10 -1.160e-13 
+  3.189e-03  1.158e-10  5.188e-06  3.188e-11 
+  1.384e-07 -1.160e-13  3.188e-11  8.954e-15 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99768   1.000 -0.997  0.013  0.014
+        2  0.99768  -0.997  1.000  0.001 -0.036
+        3  0.29424   0.013  0.001  1.000  0.148
+        4  0.36728   0.014 -0.036  0.148  1.000
+ ERR MATRIX NOT POS-DEF
+status of the fit-----000------4
+1  558952
+2  0.565004
+3  -0.00810442
+4  0.000999765
+ **********
+ **    7 **SET PRINT           2
+ **********
+ **********
+ **    8 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 p0           5.58000e+05  1.67400e+05     no limits
+     2 p1           5.65000e-01  1.69500e-01     no limits
+     3 p2           0.00000e+00  3.00000e-01     no limits
+     4 p3           9.99871e-04  2.99961e-04     no limits
+ **********
+ **    9 **SET ERR         0.5
+ **********
+ **********
+ **   10 **SET PRINT           2
+ **********
+ **********
+ **   11 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **   12 **MIGRAD        1480        0.01
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-05
+ FCN=17303.2 FROM MIGRAD    STATUS=INITIATE       18 CALLS          19 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58000e+05   1.67400e+05   1.67400e+05  -3.62605e+01
+   2  p1           5.65000e-01   1.69500e-01   1.69500e-01  -1.12557e+08
+   3  p2           0.00000e+00   3.00000e-01   3.00000e-01   0.00000e+00
+   4  p3           9.99871e-04   2.99961e-04   2.99961e-04  -1.01024e+09
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+ FCN=470.218 FROM MIGRAD    STATUS=PROGRESS       34 CALLS          35 TOTAL
+                     EDM=1276.93    STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58439e+05   1.67400e+05   4.38826e+02  -8.16258e-01
+   2  p1           5.65142e-01   1.69500e-01   1.41509e-04  -2.50597e+06
+   3  p2           0.00000e+00   3.00000e-01  -0.00000e+00   0.00000e+00
+   4  p3           1.00168e-03   2.99961e-04   1.81248e-06   3.94523e+08
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         6.1425e-04  8.0209e-01  1.0277e+00  2.1696e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=77.8686 FROM HESSE     STATUS=OK             29 CALLS         168 TOTAL
+                     EDM=7.13928e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.59654e+05   1.46264e+02   2.66864e-01  -4.72942e-05
+   2  p1           5.64774e-01   4.70225e-05   2.69305e-07  -6.76968e+01
+   3  p2           0.00000e+00   1.80392e-02   1.12616e-04   0.00000e+00
+   4  p3           9.99872e-04   6.19170e-08   4.76776e-10   1.38953e+04
+                               ERR DEF= 0.5
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99938   1.000 -0.999 -0.319  0.078
+        2  0.99939  -0.999  1.000  0.318 -0.089
+        3  0.33082  -0.319  0.318  1.000  0.060
+        4  0.33378   0.078 -0.089  0.060  1.000
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=77.8686 FROM MIGRAD    STATUS=CONVERGED     168 CALLS         169 TOTAL
+                     EDM=7.13928e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.59654e+05   1.46264e+02   0.00000e+00  -4.72942e-05
+   2  p1           5.64774e-01   4.70225e-05  -0.00000e+00  -6.76968e+01
+   3  p2           0.00000e+00   1.80392e-02  -0.00000e+00   0.00000e+00
+   4  p3           9.99872e-04   6.19170e-08  -0.00000e+00   1.38953e+04
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  2.139e+04 -6.873e-03 -8.409e-01  7.024e-07 
+ -6.873e-03  2.211e-09  2.700e-07 -2.592e-13 
+ -8.409e-01  2.700e-07  3.254e-04  6.730e-11 
+  7.024e-07 -2.592e-13  6.730e-11  3.834e-15 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99938   1.000 -0.999 -0.319  0.078
+        2  0.99939  -0.999  1.000  0.318 -0.089
+        3  0.33082  -0.319  0.318  1.000  0.060
+        4  0.33378   0.078 -0.089  0.060  1.000
+ EXTERNAL ERROR MATRIX.    NDIM=   4    NPAR=  4    ERR DEF=0.5
+  2.139e+04 -6.873e-03 -8.409e-01  7.024e-07 
+ -6.873e-03  2.211e-09  2.700e-07 -2.592e-13 
+ -8.409e-01  2.700e-07  3.254e-04  6.730e-11 
+  7.024e-07 -2.592e-13  6.730e-11  3.834e-15 
+ FCN=77.8686 FROM MIGRAD    STATUS=CONVERGED     168 CALLS         169 TOTAL
+                     EDM=7.13928e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  p0           5.59654e+05   1.46264e+02                            
+   2  p1           5.64774e-01   4.70225e-05                            
+   3  p2           0.00000e+00   1.80392e-02                            
+   4  p3           9.99872e-04   6.19170e-08                            
+                               ERR DEF= 0.5
+------------------------------------------
+Enering ROOFIt-------
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.59654e+05  1.00000e-01     no limits
+     2 Q            5.65000e-01  1.00000e-01     no limits
+     3 theta        0.00000e+00  1.00000e-01     no limits
+     4 pileup       9.99872e-04  1.00000e-01     no limits
+ **********
+ **    1 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.3786e+11 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59654e+05   1.00000e-01   1.00000e-01   2.67466e+01
+   2  Q            5.65000e-01   1.00000e-01   1.00000e-01   4.16813e+08
+   3  theta        0.00000e+00   1.00000e-01   1.00000e-01   0.00000e+00
+   4  pileup       9.99872e-04   1.00000e-01   1.00000e-01  -9.17099e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -2.8250e+00  1.3104e-01  9.1611e-01  5.7778e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 2.830775 TO DIAGONAL.
+ FCN=-2.3786e+11 FROM HESSE     STATUS=NOT POSDEF     27 CALLS          53 TOTAL
+                     EDM=359979    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59654e+05   3.12067e+01   2.66864e+00   2.67466e+01
+   2  Q            5.65000e-01   3.28321e-06   1.00000e-03   8.32766e+07
+   3  theta        0.00000e+00   2.98765e-02   1.00000e-01   0.00000e+00
+   4  pileup       9.99872e-04   1.33992e-07   1.00000e-02   7.49846e+08
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.3786e+11 FROM MIGRAD    STATUS=FAILED        203 CALLS         204 TOTAL
+                     EDM=1425.17    STRATEGY= 1      ERR MATRIX APPROXIMATE
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58986e+05   2.43825e+01   1.72590e+03   2.54164e+00
+   2  Q            5.65028e-01   2.02888e-06   5.54493e-04   7.88189e+06
+   3  theta       -3.27881e-02   9.32311e-04   1.31369e-01  -3.47201e+03
+   4  pileup       1.00011e-03   1.91852e-07   2.09870e-05   2.77466e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  5.945e+02 -4.681e-05 -1.629e-02  3.629e-06 
+ -4.681e-05  4.116e-12  1.515e-09 -3.383e-13 
+ -1.629e-02  1.515e-09  8.692e-07 -1.161e-10 
+  3.629e-06 -3.383e-13 -1.161e-10  3.681e-14 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.95480   1.000 -0.946 -0.717  0.776
+        2  0.97939  -0.946  1.000  0.801 -0.869
+        3  0.82299  -0.717  0.801  1.000 -0.649
+        4  0.88825   0.776 -0.869 -0.649  1.000
+ ERR MATRIX APPROXIMATE
+ **********
+ **    2 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.3786e+11 FROM MIGRAD    STATUS=INITIATE        8 CALLS         212 TOTAL
+                     EDM=2419.14    STRATEGY= 1      ERR MATRIX APPROXIMATE
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58986e+05   2.43825e+01   1.72590e+03   2.47961e+00
+   2  Q            5.65028e-01   2.02888e-06   5.54493e-04   7.88174e+06
+   3  theta       -3.27881e-02   9.32311e-04   1.31369e-01  -6.24469e+04
+   4  pileup       1.00011e-03   1.91852e-07   2.09870e-05   2.32376e+07
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -2.5914e-04  6.1905e-01  8.6234e-01  2.5189e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.002778 TO DIAGONAL.
+ FCN=-2.3786e+11 FROM HESSE     STATUS=NOT POSDEF     27 CALLS         323 TOTAL
+                     EDM=23.8724    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58903e+05   1.01839e+02   1.72565e+03   1.31069e+00
+   2  Q            5.65033e-01   3.29508e-05   9.74754e-05   4.07835e+06
+   3  theta       -2.12611e-02   5.91604e-04   1.48773e-01  -1.18768e+04
+   4  pileup       1.00011e-03   9.68663e-08   2.09872e-05   5.09041e+07
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -3.3791e-04  6.6787e-01  8.7059e-01  2.4619e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.002800 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.3786e+11 FROM MIGRAD    STATUS=FAILED        168 CALLS         372 TOTAL
+                     EDM=1.59858    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58868e+05   1.03189e+02   1.72565e+03   1.86283e-01
+   2  Q            5.65034e-01   3.32730e-05   1.94951e-04   5.74240e+05
+   3  theta       -2.07018e-02   6.76174e-04   1.20645e-01  -2.43494e+03
+   4  pileup       1.00007e-03   9.60904e-08   8.39488e-06   1.27314e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  1.065e+04 -3.423e-03 -5.318e-03  2.629e-08 
+ -3.423e-03  1.107e-09  2.249e-09 -6.965e-14 
+ -5.318e-03  2.249e-09  4.572e-07  1.469e-11 
+  2.629e-08 -6.965e-14  1.469e-11  9.233e-15 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99754   1.000 -0.997 -0.076  0.003
+        2  0.99755  -0.997  1.000  0.100 -0.022
+        3  0.44342  -0.076  0.100  1.000  0.226
+        4  0.40128   0.003 -0.022  0.226  1.000
+ ERR MATRIX NOT POS-DEF
+status of the fit-----000------4
+1  558868
+2  0.565034
+3  -0.0207018
+4  0.00100007
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.58868e+05  1.00000e-01     no limits
+     2 Q            5.65034e-01  1.00000e-01     no limits
+     3 theta       -2.07018e-02  1.00000e-01     no limits
+     4 pileup       1.00007e-03  1.00000e-01     no limits
+ **********
+ **    3 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.3786e+11 FROM MIGRAD    STATUS=INITIATE       18 CALLS         391 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58868e+05   1.00000e-01   1.00000e-01   1.86371e-01
+   2  Q            5.65034e-01   1.00000e-01   1.00000e-01   4.18276e+06
+   3  theta       -2.07018e-02   1.00000e-01   1.00000e-01  -1.55553e+05
+   4  pileup       1.00007e-03   1.00000e-01   1.00000e-01  -9.18054e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2.3786e+11 FROM HESSE     STATUS=OK             29 CALLS         431 TOTAL
+                     EDM=4.33778    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58868e+05   1.98784e+01   2.66489e+00   1.86377e-01
+   2  Q            5.65034e-01   1.28182e-06   1.00000e-03   5.74249e+05
+   3  theta       -2.07018e-02   8.16215e-04   1.06387e-01  -2.36424e+03
+   4  pileup       1.00007e-03   9.24328e-08   1.00000e-02   1.21462e+07
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -4.3817e-01  8.0177e-02  1.1932e+00  3.1648e+00
+ MINUIT WARNING IN MIGRAD  
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.441339 TO DIAGONAL.
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -8.1373e-05  8.0655e-01  9.9942e-01  2.1941e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.002275 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.3786e+11 FROM MIGRAD    STATUS=FAILED        106 CALLS         479 TOTAL
+                     EDM=6.51662    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58858e+05   1.09431e+02   5.32978e+00  -1.13114e-01
+   2  Q            5.65035e-01   3.51977e-05   1.02990e-04  -3.56687e+05
+   3  theta       -2.03841e-02   1.25008e-03   4.25547e-02  -2.77031e+03
+   4  pileup       1.00005e-03   9.35995e-08   2.14097e-05   2.26950e+06
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  1.198e+04 -3.842e-03  3.480e-06  9.679e-08 
+ -3.842e-03  1.239e-09  4.017e-11 -1.096e-13 
+  3.480e-06  4.017e-11  1.563e-06  1.141e-12 
+  9.679e-08 -1.096e-13  1.141e-12  8.761e-15 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99781   1.000 -0.998  0.000  0.009
+        2  0.99781  -0.998  1.000  0.001 -0.033
+        3  0.02022   0.000  0.001  1.000  0.010
+        4  0.33979   0.009 -0.033  0.010  1.000
+ ERR MATRIX NOT POS-DEF
+ **********
+ **    4 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.3786e+11 FROM MIGRAD    STATUS=INITIATE        8 CALLS         487 TOTAL
+                     EDM=17.3788    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58858e+05   1.09431e+02   5.32978e+00  -1.13107e-01
+   2  Q            5.65035e-01   3.51977e-05   1.02990e-04  -3.56710e+05
+   3  theta       -2.03841e-02   1.25008e-03   4.25547e-02  -6.62404e+03
+   4  pileup       1.00005e-03   9.35995e-08   2.14097e-05  -2.42309e+06
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -4.2615e-04  4.9591e-01  8.5383e-01  2.6507e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.003077 TO DIAGONAL.
+ FCN=-2.3786e+11 FROM HESSE     STATUS=NOT POSDEF     29 CALLS         604 TOTAL
+                     EDM=4.91776    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58839e+05   9.88862e+01   1.72549e+03   1.91805e-01
+   2  Q            5.65038e-01   3.22454e-05   9.74537e-05   6.03500e+05
+   3  theta       -1.12133e-02   6.61930e-04   1.54857e-01  -6.81131e+03
+   4  pileup       1.00008e-03   9.97938e-08   2.09881e-05   4.43490e+07
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -3.0904e-04  5.2370e-01  8.5652e-01  2.6201e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.002929 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.3786e+11 FROM MIGRAD    STATUS=FAILED        174 CALLS         653 TOTAL
+                     EDM=3.31562    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58805e+05   9.98575e+01   6.90196e+02   2.47463e-01
+   2  Q            5.65051e-01   3.23164e-05   1.94907e-04   7.77670e+05
+   3  theta       -1.03066e-02   8.00291e-04   1.19299e-01  -3.79050e+03
+   4  pileup       9.99904e-04   9.89072e-08   8.39523e-06   8.27919e+06
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  9.972e+03 -3.215e-03 -1.097e-02 -3.523e-07 
+ -3.215e-03  1.044e-09  4.468e-09  7.243e-14 
+ -1.097e-02  4.468e-09  6.405e-07  2.566e-11 
+ -3.523e-07  7.243e-14  2.566e-11  9.783e-15 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99737   1.000 -0.996 -0.137 -0.036
+        2  0.99740  -0.996  1.000  0.173  0.023
+        3  0.59191  -0.137  0.173  1.000  0.324
+        4  0.45646  -0.036  0.023  0.324  1.000
+ ERR MATRIX NOT POS-DEF
+status of the fit-----000------4
+1  558805
+2  0.565051
+3  -0.0103066
+4  0.000999904
+ **********
+ **   13 **SET PRINT           2
+ **********
+ **********
+ **   14 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 p0           5.58000e+05  1.67400e+05     no limits
+     2 p1           5.65000e-01  1.69500e-01     no limits
+     3 p2           0.00000e+00  3.00000e-01     no limits
+     4 p3           9.99871e-04  2.99961e-04     no limits
+ **********
+ **   15 **SET ERR         0.5
+ **********
+ **********
+ **   16 **SET PRINT           2
+ **********
+ **********
+ **   17 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **   18 **MIGRAD        1480        0.01
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-05
+ FCN=17286.3 FROM MIGRAD    STATUS=INITIATE       18 CALLS          19 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58000e+05   1.67400e+05   1.67400e+05  -3.62551e+01
+   2  p1           5.65000e-01   1.69500e-01   1.69500e-01  -1.12538e+08
+   3  p2           0.00000e+00   3.00000e-01   3.00000e-01   0.00000e+00
+   4  p3           9.99871e-04   2.99961e-04   2.99961e-04  -9.75226e+08
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+ FCN=495.491 FROM MIGRAD    STATUS=PROGRESS       34 CALLS          35 TOTAL
+                     EDM=1410.08    STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58439e+05   1.67400e+05   4.39416e+02  -8.30142e-01
+   2  p1           5.65142e-01   1.69500e-01   1.41696e-04  -2.54733e+06
+   3  p2           0.00000e+00   3.00000e-01  -0.00000e+00   0.00000e+00
+   4  p3           1.00162e-03   2.99961e-04   1.75246e-06   4.15314e+08
+                               ERR DEF= 0.5
+ FCN=62.8136 FROM MIGRAD    STATUS=PROGRESS      153 CALLS         154 TOTAL
+                     EDM=1.25959e-05    STRATEGY= 1  ERROR MATRIX UNCERTAINTY  20.8 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.59812e+05   9.58337e+02   4.42097e-01   2.21047e-05
+   2  p1           5.64724e-01   3.06900e-04  -1.41584e-07   5.62505e+01
+   3  p2           0.00000e+00   4.92096e-04  -0.00000e+00   0.00000e+00
+   4  p3           9.99722e-04   6.38716e-08  -2.71707e-12  -1.32790e+03
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         1.4839e-03  8.1061e-01  1.0141e+00  2.1739e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=62.8136 FROM HESSE     STATUS=OK             29 CALLS         184 TOTAL
+                     EDM=1.34081e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.59812e+05   9.38305e+01   2.66939e-01   1.88181e-05
+   2  p1           5.64724e-01   3.03162e-05   2.69282e-07   7.28976e+01
+   3  p2           0.00000e+00   8.28195e-03   4.65515e-05   0.00000e+00
+   4  p3           9.99722e-04   6.61525e-08   4.76704e-10  -1.91866e+03
+                               ERR DEF= 0.5
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99851   1.000 -0.998  0.358  0.283
+        2  0.99852  -0.998  1.000 -0.358 -0.301
+        3  0.36347   0.358 -0.358  1.000  0.162
+        4  0.42673   0.283 -0.301  0.162  1.000
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=62.8136 FROM MIGRAD    STATUS=CONVERGED     184 CALLS         185 TOTAL
+                     EDM=1.34081e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.59812e+05   9.38305e+01   0.00000e+00   1.88181e-05
+   2  p1           5.64724e-01   3.03162e-05  -0.00000e+00   7.28976e+01
+   3  p2           0.00000e+00   8.28195e-03   0.00000e+00   0.00000e+00
+   4  p3           9.99722e-04   6.61525e-08   0.00000e+00  -1.91866e+03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  8.804e+03 -2.840e-03  2.780e-01  1.757e-06 
+ -2.840e-03  9.191e-10 -8.992e-08 -6.029e-13 
+  2.780e-01 -8.992e-08  6.859e-05  8.902e-11 
+  1.757e-06 -6.029e-13  8.902e-11  4.376e-15 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99851   1.000 -0.998  0.358  0.283
+        2  0.99852  -0.998  1.000 -0.358 -0.301
+        3  0.36347   0.358 -0.358  1.000  0.162
+        4  0.42673   0.283 -0.301  0.162  1.000
+ EXTERNAL ERROR MATRIX.    NDIM=   4    NPAR=  4    ERR DEF=0.5
+  8.804e+03 -2.840e-03  2.780e-01  1.757e-06 
+ -2.840e-03  9.191e-10 -8.992e-08 -6.029e-13 
+  2.780e-01 -8.992e-08  6.859e-05  8.902e-11 
+  1.757e-06 -6.029e-13  8.902e-11  4.376e-15 
+ FCN=62.8136 FROM MIGRAD    STATUS=CONVERGED     184 CALLS         185 TOTAL
+                     EDM=1.34081e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  p0           5.59812e+05   9.38305e+01                            
+   2  p1           5.64724e-01   3.03162e-05                            
+   3  p2           0.00000e+00   8.28195e-03                            
+   4  p3           9.99722e-04   6.61525e-08                            
+                               ERR DEF= 0.5
+------------------------------------------
+Enering ROOFIt-------
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.59812e+05  1.00000e-01     no limits
+     2 Q            5.65000e-01  1.00000e-01     no limits
+     3 theta        0.00000e+00  1.00000e-01     no limits
+     4 pileup       9.99722e-04  1.00000e-01     no limits
+ **********
+ **    1 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.3786e+11 FROM MIGRAD    STATUS=INITIATE       43 CALLS          44 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59812e+05   1.00000e-01   0.00000e+00   1.07977e+01
+   2  Q            5.65000e-01   1.00000e-01   0.00000e+00   3.26823e+07
+   3  theta        1.00000e-01   1.00000e-01   1.00000e-01   7.23371e+05
+   4  pileup       9.99722e-04   1.00000e-01   0.00000e+00  -6.68164e+08
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -2.3145e-03  6.5063e-01  9.8260e-01  2.3691e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.004684 TO DIAGONAL.
+ FCN=-2.3786e+11 FROM HESSE     STATUS=NOT POSDEF     27 CALLS         102 TOTAL
+                     EDM=131134    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59448e+05   7.83737e+01   2.66939e+02   3.81518e+00
+   2  Q            5.64888e-01   3.69891e-07   5.53896e-04   1.18174e+07
+   3  theta        4.87618e-02   8.48086e-03   1.05034e-01  -3.53959e+03
+   4  pileup       1.00304e-03   7.19923e-07   2.09602e-05   6.36338e+08
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.3786e+11 FROM MIGRAD    STATUS=FAILED        141 CALLS         142 TOTAL
+                     EDM=2.17263e+07    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59291e+05   1.01107e+01  -0.00000e+00  -2.45335e+00
+   2  Q            5.64888e-01   1.00000e+00   0.00000e+00  -4.12250e+09
+   3  theta        3.75188e-02   1.00000e+00  -0.00000e+00   5.93417e+05
+   4  pileup       1.00083e-03   1.00000e+00  -0.00000e+00   2.58703e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  1.022e+02  2.496e-07  2.487e-03  1.269e-07 
+  2.496e-07  1.000e+00 -1.457e-11  3.594e-15 
+  2.487e-03 -1.457e-11  1.000e+00  3.127e-11 
+  1.269e-07  3.594e-15  3.127e-11  1.000e+00 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.00025   1.000  0.000  0.000  0.000
+        2  0.00000   0.000  1.000 -0.000  0.000
+        3  0.00025   0.000 -0.000  1.000  0.000
+        4  0.00000   0.000  0.000  0.000  1.000
+ ERR MATRIX NOT POS-DEF
+ **********
+ **    2 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.3786e+11 FROM MIGRAD    STATUS=INITIATE       12 CALLS         154 TOTAL
+                     EDM=3.58391e+15    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59291e+05   1.01107e+01  -0.00000e+00  -2.45333e+00
+   2  Q            5.64888e-01   1.00000e+00   0.00000e+00  -7.50303e+06
+   3  theta        3.75188e-02   1.00000e+00  -0.00000e+00   3.02837e+05
+   4  pileup       1.00083e-03   1.00000e+00  -0.00000e+00   2.59367e+07
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -4.5430e-03  8.1639e-02  8.4548e-01  3.0774e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.007620 TO DIAGONAL.
+ FCN=-2.3786e+11 FROM HESSE     STATUS=NOT POSDEF     27 CALLS         192 TOTAL
+                     EDM=200.508    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59291e+05   8.24796e+01   1.72692e+03  -2.39133e+00
+   2  Q            5.64888e-01   3.15827e-05   8.63319e-05  -7.50276e+06
+   3  theta        3.75188e-02   2.46492e-03   1.05968e-01   2.47986e+04
+   4  pileup       1.00083e-03   2.01985e-07   2.09974e-05   5.43361e+07
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -2.2597e-04  2.0174e-01  8.4882e-01  2.9497e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.003176 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.3786e+11 FROM MIGRAD    STATUS=FAILED         98 CALLS         240 TOTAL
+                     EDM=297.023    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59412e+05   9.38719e+01   1.72692e+03  -3.14686e+00
+   2  Q            5.64840e-01   3.05802e-05   1.72664e-04  -9.85428e+06
+   3  theta        3.23850e-02   1.62506e-03   4.23871e-02   2.22772e+04
+   4  pileup       1.00034e-03   1.17727e-07   8.39895e-06  -4.45143e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  8.812e+03 -2.851e-03 -1.862e-02 -6.536e-07 
+ -2.851e-03  9.351e-10  1.020e-08  3.169e-13 
+ -1.862e-02  1.020e-08  2.641e-06  1.160e-10 
+ -6.536e-07  3.169e-13  1.160e-10  1.386e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99702   1.000 -0.993 -0.122 -0.059
+        2  0.99711  -0.993  1.000  0.205  0.088
+        3  0.84793  -0.122  0.205  1.000  0.607
+        4  0.66417  -0.059  0.088  0.607  1.000
+ ERR MATRIX NOT POS-DEF
+status of the fit-----000------4
+1  559412
+2  0.56484
+3  0.032385
+4  0.00100034
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.59412e+05  1.00000e-01     no limits
+     2 Q            5.64840e-01  1.00000e-01     no limits
+     3 theta        3.23850e-02  1.00000e-01     no limits
+     4 pileup       1.00034e-03  1.00000e-01     no limits
+ **********
+ **    3 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.3786e+11 FROM MIGRAD    STATUS=INITIATE       16 CALLS         257 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59412e+05   1.00000e-01   1.00000e-01  -3.14431e+00
+   2  Q            5.64840e-01   1.00000e-01   1.00000e-01  -5.48007e+07
+   3  theta        3.23850e-02   1.00000e-01   1.00000e-01   4.70914e+05
+   4  pileup       1.00034e-03   1.00000e-01   1.00000e-01  -9.18172e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.2492e-01  2.4824e-01  9.1632e-01  2.9604e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.127884 TO DIAGONAL.
+ FCN=-2.3786e+11 FROM HESSE     STATUS=NOT POSDEF     29 CALLS         297 TOTAL
+                     EDM=5588.68    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59412e+05   2.98938e+01   2.66748e+00  -3.14396e+00
+   2  Q            5.64840e-01   6.08021e-06   1.00000e-03  -9.85425e+06
+   3  theta        3.23850e-02   5.28506e-03   1.44872e-01   2.29418e+04
+   4  pileup       1.00034e-03   9.63409e-08   1.00000e-02  -4.50992e+07
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 1 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 2861.2 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -3.2345e-04  7.4063e-02  8.4689e-01  3.0794e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.003403 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.3786e+11 FROM MIGRAD    STATUS=FAILED        104 CALLS         345 TOTAL
+                     EDM=123.691    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59521e+05   9.02861e+01   5.33497e+00   1.30022e-01
+   2  Q            5.64818e-01   3.04712e-05   1.02986e-04   3.78889e+05
+   3  theta        1.30880e-02   3.82604e-03   5.79489e-02  -3.03858e+02
+   4  pileup       1.00019e-03   1.61559e-07   2.14091e-05   9.56916e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  8.152e+03 -2.709e-03 -7.954e-02 -2.722e-06 
+ -2.709e-03  9.285e-10  4.397e-08  1.430e-12 
+ -7.954e-02  4.397e-08  1.464e-05  5.040e-10 
+ -2.722e-06  1.430e-12  5.040e-10  2.610e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99678   1.000 -0.985 -0.230 -0.187
+        2  0.99708  -0.985  1.000  0.377  0.291
+        3  0.94732  -0.230  0.377  1.000  0.815
+        4  0.83864  -0.187  0.291  0.815  1.000
+ ERR MATRIX NOT POS-DEF
+ **********
+ **    4 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.3786e+11 FROM MIGRAD    STATUS=INITIATE        8 CALLS         353 TOTAL
+                     EDM=247.298    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59521e+05   9.02861e+01   5.33497e+00   1.29942e-01
+   2  Q            5.64818e-01   3.04712e-05   1.02986e-04   3.78981e+05
+   3  theta        1.30880e-02   3.82604e-03   5.79489e-02   4.36511e+03
+   4  pileup       1.00019e-03   1.61559e-07   2.14091e-05   9.10018e+07
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -2.8848e-04  2.3258e-01  8.4832e-01  2.9194e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.003208 TO DIAGONAL.
+ FCN=-2.3786e+11 FROM HESSE     STATUS=NOT POSDEF     27 CALLS         431 TOTAL
+                     EDM=11.3596    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59529e+05   9.39232e+01   1.06699e+03  -5.53822e-01
+   2  Q            5.64810e-01   3.08708e-05   8.67351e-05  -1.74789e+06
+   3  theta        8.23015e-03   1.59534e-03   8.56650e-02   4.60694e+02
+   4  pileup       9.99990e-04   1.14598e-07   2.09895e-05   4.03953e+07
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.3786e+11 FROM MIGRAD    STATUS=FAILED        239 CALLS         584 TOTAL
+                     EDM=0.265983    STRATEGY= 1      ERR MATRIX APPROXIMATE
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59499e+05   9.57547e+00   1.72746e+03   9.57084e-03
+   2  Q            5.64826e-01   3.69002e-07   5.54659e-04   3.50494e+03
+   3  theta        7.51347e-03   4.90009e-04   2.38838e-01   6.17617e+02
+   4  pileup       9.99758e-04   1.07336e-07   2.09849e-05   4.64034e+06
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  9.169e+01 -3.943e-07  2.726e-03  4.810e-08 
+ -3.943e-07  1.362e-13  2.632e-12  2.739e-16 
+  2.726e-03  2.632e-12  2.401e-07  2.572e-11 
+  4.810e-08  2.739e-16  2.572e-11  1.152e-14 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.65276   1.000 -0.112  0.581  0.047
+        2  0.15728  -0.112  1.000  0.015  0.007
+        3  0.74622   0.581  0.015  1.000  0.489
+        4  0.57095   0.047  0.007  0.489  1.000
+ ERR MATRIX APPROXIMATE
+status of the fit-----000------4
+1  559499
+2  0.564826
+3  0.00751347
+4  0.000999758
+ **********
+ **   19 **SET PRINT           2
+ **********
+ **********
+ **   20 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 p0           5.58000e+05  1.67400e+05     no limits
+     2 p1           5.65000e-01  1.69500e-01     no limits
+     3 p2           0.00000e+00  3.00000e-01     no limits
+     4 p3           9.99871e-04  2.99961e-04     no limits
+ **********
+ **   21 **SET ERR         0.5
+ **********
+ **********
+ **   22 **SET PRINT           2
+ **********
+ **********
+ **   23 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **   24 **MIGRAD        1480        0.01
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-05
+ FCN=17538.7 FROM MIGRAD    STATUS=INITIATE       18 CALLS          19 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58000e+05   1.67400e+05   1.67400e+05  -3.65201e+01
+   2  p1           5.65000e-01   1.69500e-01   1.69500e-01  -1.13364e+08
+   3  p2           0.00000e+00   3.00000e-01   3.00000e-01   0.00000e+00
+   4  p3           9.99871e-04   2.99961e-04   2.99961e-04  -9.94820e+08
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+ FCN=488.218 FROM MIGRAD    STATUS=PROGRESS       34 CALLS          35 TOTAL
+                     EDM=1382.01    STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58442e+05   1.67400e+05   4.42386e+02  -8.31169e-01
+   2  p1           5.65143e-01   1.69500e-01   1.42659e-04  -2.55327e+06
+   3  p2           0.00000e+00   3.00000e-01  -0.00000e+00   0.00000e+00
+   4  p3           1.00166e-03   2.99961e-04   1.78666e-06   4.10903e+08
+                               ERR DEF= 0.5
+ FCN=64.708 FROM MIGRAD    STATUS=PROGRESS      160 CALLS         161 TOTAL
+                     EDM=0.000224909    STRATEGY= 1  ERROR MATRIX UNCERTAINTY  16.5 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58481e+05   4.71176e+01   2.97535e-01  -3.10176e-03
+   2  p1           5.65154e-01   1.43873e-05  -1.27242e-07  -8.23606e+03
+   3  p2           0.00000e+00   4.88099e-04  -0.00000e+00   0.00000e+00
+   4  p3           9.99747e-04   6.50563e-08   3.60590e-10  -3.10127e+05
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         1.5559e-03  7.7809e-01  1.0667e+00  2.1536e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=64.6011 FROM MIGRAD    STATUS=CONVERGED     237 CALLS         238 TOTAL
+                     EDM=1.52537e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58959e+05   9.13482e+01   2.66532e-01   1.80665e-04
+   2  p1           5.65001e-01   2.96650e-05   2.69413e-07   5.75949e+02
+   3  p2           0.00000e+00   6.24465e-03   3.57619e-05   0.00000e+00
+   4  p3           9.99758e-04   6.67289e-08   4.76722e-10   1.81582e+04
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  8.344e+03 -2.705e-03  1.035e-01  2.563e-06 
+ -2.705e-03  8.800e-10 -3.398e-08 -8.635e-13 
+  1.035e-01 -3.398e-08  3.900e-05  8.433e-11 
+  2.563e-06 -8.635e-13  8.433e-11  4.453e-15 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99843   1.000 -0.998  0.182  0.420
+        2  0.99846  -0.998  1.000 -0.183 -0.436
+        3  0.22862   0.182 -0.183  1.000  0.202
+        4  0.51958   0.420 -0.436  0.202  1.000
+ EXTERNAL ERROR MATRIX.    NDIM=   4    NPAR=  4    ERR DEF=0.5
+  8.344e+03 -2.705e-03  1.035e-01  2.563e-06 
+ -2.705e-03  8.800e-10 -3.398e-08 -8.635e-13 
+  1.035e-01 -3.398e-08  3.900e-05  8.433e-11 
+  2.563e-06 -8.635e-13  8.433e-11  4.453e-15 
+ FCN=64.6011 FROM MIGRAD    STATUS=CONVERGED     237 CALLS         238 TOTAL
+                     EDM=1.52537e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  p0           5.58959e+05   9.13482e+01                            
+   2  p1           5.65001e-01   2.96650e-05                            
+   3  p2           0.00000e+00   6.24465e-03                            
+   4  p3           9.99758e-04   6.67289e-08                            
+                               ERR DEF= 0.5
+------------------------------------------
+Enering ROOFIt-------
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.58959e+05  1.00000e-01     no limits
+     2 Q            5.65000e-01  1.00000e-01     no limits
+     3 theta        0.00000e+00  1.00000e-01     no limits
+     4 pileup       9.99758e-04  1.00000e-01     no limits
+ **********
+ **    1 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37863e+11 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58959e+05   1.00000e-01   1.00000e-01  -6.60657e-02
+   2  Q            5.65000e-01   1.00000e-01   1.00000e-01   5.00502e+06
+   3  theta        0.00000e+00   1.00000e-01   1.00000e-01   0.00000e+00
+   4  pileup       9.99758e-04   1.00000e-01   1.00000e-01  -9.18078e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2.37863e+11 FROM HESSE     STATUS=OK             27 CALLS          53 TOTAL
+                     EDM=3.20403    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58959e+05   7.58205e+01   2.66532e+00  -6.61516e-02
+   2  Q            5.65000e-01   7.09770e-06   1.00000e-03  -2.05225e+05
+   3  theta        0.00000e+00   6.13966e-03   1.00000e-01   0.00000e+00
+   4  pileup       9.99758e-04   9.24329e-08   1.00000e-02  -2.42732e+06
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37863e+11 FROM MIGRAD    STATUS=FAILED         93 CALLS          94 TOTAL
+                     EDM=19882.4    STRATEGY= 1  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58961e+05   8.55580e+00   0.00000e+00   1.37198e-03
+   2  Q            5.65000e-01   2.70256e-08   0.00000e+00  -6.40783e+07
+   3  theta       -1.86821e-04   5.92485e-04   0.00000e+00  -1.25376e+03
+   4  pileup       9.99758e-04   7.46356e-08   0.00000e+00  -2.83677e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  7.320e+01  1.286e-07  2.937e-03 -2.395e-07 
+  1.286e-07  7.304e-16  1.523e-11 -1.522e-15 
+  2.937e-03  1.523e-11  3.510e-07 -3.580e-11 
+ -2.395e-07 -1.522e-15 -3.580e-11  5.570e-15 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.60117   1.000  0.556  0.579 -0.375
+        2  0.95164   0.556  1.000  0.951 -0.755
+        3  0.96421   0.579  0.951  1.000 -0.810
+        4  0.81917  -0.375 -0.755 -0.810  1.000
+ ERR MATRIX APPROXIMATE
+ **********
+ **    2 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37863e+11 FROM MIGRAD    STATUS=INITIATE       12 CALLS         106 TOTAL
+                     EDM=5.12673    STRATEGY= 1  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58961e+05   8.55580e+00   0.00000e+00  -4.73137e-03
+   2  Q            5.65000e-01   2.70256e-08   0.00000e+00   4.50661e+03
+   3  theta       -1.86821e-04   5.92485e-04   0.00000e+00  -4.07676e+03
+   4  pileup       9.99758e-04   7.46356e-08   0.00000e+00  -2.83679e+07
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.5231e-03  3.6615e-01  8.4822e-01  2.7872e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.004310 TO DIAGONAL.
+ FCN=-2.37863e+11 FROM MIGRAD    STATUS=CONVERGED      52 CALLS         146 TOTAL
+                     EDM=6.89508e-05    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58961e+05   9.50514e+01   5.33065e+02   1.42050e-03
+   2  Q            5.65000e-01   3.18088e-05   9.41238e-05   4.42815e+03
+   3  theta       -1.86821e-04   7.52445e-04   1.83343e-01  -1.11106e+01
+   4  pileup       9.99758e-04   1.08235e-07   2.09851e-05   6.95678e+04
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  9.035e+03 -3.010e-03 -4.055e-02 -2.933e-06 
+ -3.010e-03  1.012e-09  1.462e-08  9.795e-13 
+ -4.055e-02  1.462e-08  5.662e-07  4.108e-11 
+ -2.933e-06  9.795e-13  4.108e-11  1.171e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99710   1.000 -0.995 -0.567 -0.285
+        2  0.99733  -0.995  1.000  0.611  0.285
+        3  0.82469  -0.567  0.611  1.000  0.504
+        4  0.58309  -0.285  0.285  0.504  1.000
+ ERR MATRIX NOT POS-DEF
+status of the fit-----000------0
+1  558961
+2  0.565
+3  -0.000186821
+4  0.000999758
+ **********
+ **   25 **SET PRINT           2
+ **********
+ **********
+ **   26 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 p0           5.58000e+05  1.67400e+05     no limits
+     2 p1           5.65000e-01  1.69500e-01     no limits
+     3 p2           0.00000e+00  3.00000e-01     no limits
+     4 p3           9.99871e-04  2.99961e-04     no limits
+ **********
+ **   27 **SET ERR         0.5
+ **********
+ **********
+ **   28 **SET PRINT           2
+ **********
+ **********
+ **   29 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **   30 **MIGRAD        1480        0.01
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-05
+ FCN=17371.8 FROM MIGRAD    STATUS=INITIATE       18 CALLS          19 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58000e+05   1.67400e+05   1.67400e+05  -3.63235e+01
+   2  p1           5.65000e-01   1.69500e-01   1.69500e-01  -1.12752e+08
+   3  p2           0.00000e+00   3.00000e-01   3.00000e-01   0.00000e+00
+   4  p3           9.99871e-04   2.99961e-04   2.99961e-04  -1.01393e+09
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+ FCN=478.244 FROM MIGRAD    STATUS=PROGRESS       34 CALLS          35 TOTAL
+                     EDM=1274.11    STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58440e+05   1.67400e+05   4.39553e+02  -8.17046e-01
+   2  p1           5.65142e-01   1.69500e-01   1.41742e-04  -2.50697e+06
+   3  p2           0.00000e+00   3.00000e-01  -0.00000e+00   0.00000e+00
+   4  p3           1.00169e-03   2.99961e-04   1.81894e-06   3.94048e+08
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+   START COVARIANCE MATRIX CALCULATION.
+ MINUIT WARNING IN HESSE   
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN HESSE   
+ ============== 5.3515 added to diagonal of error matrix
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.1709e+01  6.5333e-01  9.9489e-01  1.4061e+01
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 11.722837 TO DIAGONAL.
+ FCN=86.0404 FROM MIGRAD    STATUS=CONVERGED     150 CALLS         151 TOTAL
+                     EDM=1.13712e-06    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.60167e+05   1.89926e-01   2.67108e-01  -5.55266e-05
+   2  p1           5.64610e-01   7.32978e-06   2.69227e-07  -1.50807e+02
+   3  p2           0.00000e+00   6.00532e+00   8.41280e-04   0.00000e+00
+   4  p3           9.99890e-04   2.47424e-07   4.76785e-10   8.76731e+03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  3.607e-02  1.072e-06  8.803e-01  3.617e-08 
+  1.072e-06  5.373e-11  4.393e-05  1.805e-12 
+  8.803e-01  4.393e-05  3.606e+01  1.482e-06 
+  3.617e-08  1.805e-12  1.482e-06  6.122e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.77181   1.000  0.770  0.772  0.770
+        2  0.99801   0.770  1.000  0.998  0.995
+        3  0.99891   0.772  0.998  1.000  0.997
+        4  0.99742   0.770  0.995  0.997  1.000
+ ERR MATRIX NOT POS-DEF
+ **********
+ **   31 **HESSE        1480
+ **********
+   START COVARIANCE MATRIX CALCULATION.
+ MINUIT WARNING IN HESSE   
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN HESSE   
+ ============== 5.3515 added to diagonal of error matrix
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.1601e+01  6.5902e-01  9.9483e-01  1.3947e+01
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 11.614654 TO DIAGONAL.
+ FCN=86.0404 FROM HESSE     STATUS=NOT POSDEF     29 CALLS         180 TOTAL
+                     EDM=4.19785e-06    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE     INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  p0           5.60167e+05   1.93098e-01   1.33554e-01   5.60167e+05
+   2  p1           5.64610e-01   7.48074e-06   1.34613e-07   5.64610e-01
+   3  p2           0.00000e+00   6.02942e+00   8.41280e-04   0.00000e+00
+   4  p3           9.99890e-04   2.39043e-07   1.28097e-08   9.99890e-04
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  3.729e-02  1.122e-06  9.060e-01  3.582e-08 
+  1.122e-06  5.596e-11  4.502e-05  1.780e-12 
+  9.060e-01  4.502e-05  3.635e+01  1.437e-06 
+  3.582e-08  1.780e-12  1.437e-06  5.714e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.77816   1.000  0.776  0.778  0.776
+        2  0.99808   0.776  1.000  0.998  0.995
+        3  0.99891   0.778  0.998  1.000  0.997
+        4  0.99730   0.776  0.995  0.997  1.000
+ ERR MATRIX NOT POS-DEF
+ EXTERNAL ERROR MATRIX.    NDIM=   4    NPAR=  4    ERR DEF=0.5
+  3.729e-02  1.122e-06  9.060e-01  3.582e-08 
+  1.122e-06  5.596e-11  4.502e-05  1.780e-12 
+  9.060e-01  4.502e-05  3.635e+01  1.437e-06 
+  3.582e-08  1.780e-12  1.437e-06  5.714e-14 
+ FCN=86.0404 FROM HESSE     STATUS=NOT POSDEF     29 CALLS         180 TOTAL
+                     EDM=4.19785e-06    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  p0           5.60167e+05   1.93098e-01                            
+   2  p1           5.64610e-01   7.48074e-06                            
+   3  p2           0.00000e+00   6.02942e+00                            
+   4  p3           9.99890e-04   2.39043e-07                            
+                               ERR DEF= 0.5
+------------------------------------------
+Enering ROOFIt-------
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.60167e+05  1.00000e-01     no limits
+     2 Q            5.65000e-01  1.00000e-01     no limits
+     3 theta        0.00000e+00  1.00000e-01     no limits
+     4 pileup       9.99890e-04  1.00000e-01     no limits
+ **********
+ **    1 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37861e+11 FROM MIGRAD    STATUS=INITIATE       44 CALLS          45 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.60167e+05   1.00000e-01   0.00000e+00   2.94422e+01
+   2  Q            5.65000e-01   1.00000e-01   0.00000e+00   9.14782e+07
+   3  theta        8.75181e-02   1.00000e-01   8.75181e-02   5.55904e+05
+   4  pileup       9.99890e-04   1.00000e-01   0.00000e+00   7.66986e+07
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.3315e-02  5.8123e-02  8.4475e-01  3.1104e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.016425 TO DIAGONAL.
+ FCN=-2.37861e+11 FROM HESSE     STATUS=NOT POSDEF     27 CALLS         150 TOTAL
+                     EDM=9369.29    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59492e+05   6.93202e+01   1.72746e+03   5.35669e+00
+   2  Q            5.64889e-01   3.17615e-05   8.71979e-05   1.66420e+07
+   3  theta        3.27049e-02   3.46821e-03   1.42254e-01  -7.62212e+03
+   4  pileup       1.00020e-03   3.02268e-07   2.09887e-05   1.22557e+08
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -3.2399e-04  1.8613e-01  8.4904e-01  2.9652e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.003289 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37861e+11 FROM MIGRAD    STATUS=FAILED        197 CALLS         198 TOTAL
+                     EDM=425.945    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59754e+05   9.36739e+01   1.72746e+03  -7.14790e-01
+   2  Q            5.64751e-01   3.05147e-05   1.74396e-04  -2.28855e+06
+   3  theta        1.62587e-02   2.04110e-03   5.69016e-02   6.29289e+03
+   4  pileup       9.98839e-04   1.19869e-07   8.39546e-06  -2.82926e+08
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  8.775e+03 -2.838e-03 -2.197e-02 -6.704e-07 
+ -2.838e-03  9.311e-10  1.263e-08  3.421e-13 
+ -2.197e-02  1.263e-08  4.166e-06  1.532e-10 
+ -6.704e-07  3.421e-13  1.532e-10  1.437e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99700   1.000 -0.993 -0.115 -0.060
+        2  0.99709  -0.993  1.000  0.203  0.094
+        3  0.85938  -0.115  0.203  1.000  0.626
+        4  0.67978  -0.060  0.094  0.626  1.000
+ ERR MATRIX NOT POS-DEF
+ **********
+ **    2 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37861e+11 FROM MIGRAD    STATUS=INITIATE       12 CALLS         210 TOTAL
+                     EDM=3.90783e+09    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59754e+05   9.36739e+01   1.72746e+03  -7.25004e-01
+   2  Q            5.64751e-01   3.05147e-05   1.74396e-04  -4.09947e+09
+   3  theta        1.62587e-02   2.04110e-03   5.69016e-02   1.19170e+04
+   4  pileup       9.98839e-04   1.19869e-07   8.39546e-06  -3.01025e+08
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -6.2570e-03  2.0994e-01  8.4532e-01  2.9510e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.009208 TO DIAGONAL.
+ FCN=-2.37861e+11 FROM HESSE     STATUS=NOT POSDEF     29 CALLS         271 TOTAL
+                     EDM=256.828    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58839e+05   8.75485e+01   1.72818e+03  -1.78066e-01
+   2  Q            5.65051e-01   3.17808e-05   9.47053e-05  -5.70838e+05
+   3  theta        2.03356e-02   1.23441e-03   1.94501e-01   7.64485e+03
+   4  pileup       9.98950e-04   1.47375e-07   2.09693e-05  -2.52126e+08
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37861e+11 FROM MIGRAD    STATUS=FAILED        116 CALLS         314 TOTAL
+                     EDM=1.79243e+09    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58827e+05   7.51407e+00  -0.00000e+00  -2.24842e-01
+   2  Q            5.65045e-01   1.00000e+00  -0.00000e+00   3.24862e+09
+   3  theta        2.03625e-02   1.00000e+00  -0.00000e+00   3.74861e+05
+   4  pileup       1.00002e-03   1.00000e+00   0.00000e+00  -3.59095e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  5.646e+01  1.389e-07  1.589e-04 -2.660e-07 
+  1.389e-07  1.000e+00 -5.930e-12 -1.217e-16 
+  1.589e-04 -5.930e-12  1.000e+00  1.801e-12 
+ -2.660e-07 -1.217e-16  1.801e-12  1.000e+00 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.00002   1.000  0.000  0.000 -0.000
+        2  0.00000   0.000  1.000 -0.000 -0.000
+        3  0.00002   0.000 -0.000  1.000  0.000
+        4  0.00000  -0.000 -0.000  0.000  1.000
+ ERR MATRIX NOT POS-DEF
+status of the fit-----000------4
+1  558827
+2  0.565045
+3  0.0203625
+4  0.00100002
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.58827e+05  1.00000e-01     no limits
+     2 Q            5.65045e-01  1.00000e-01     no limits
+     3 theta        2.03625e-02  1.00000e-01     no limits
+     4 pileup       1.00002e-03  1.00000e-01     no limits
+ **********
+ **    3 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37861e+11 FROM MIGRAD    STATUS=INITIATE       18 CALLS         333 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58827e+05   1.00000e-01   1.00000e-01  -1.60256e-01
+   2  Q            5.65045e-01   1.00000e-01   1.00000e-01  -9.50288e+05
+   3  theta        2.03625e-02   1.00000e-01   1.00000e-01   1.53757e+05
+   4  pileup       1.00002e-03   1.00000e-01   1.00000e-01  -9.18076e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.2576e-01  2.4515e-01  9.1645e-01  2.9642e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.128724 TO DIAGONAL.
+ FCN=-2.37861e+11 FROM HESSE     STATUS=NOT POSDEF     29 CALLS         373 TOTAL
+                     EDM=137.095    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58827e+05   2.92753e+01   2.66470e+00  -1.60364e-01
+   2  Q            5.65045e-01   6.07044e-06   1.00000e-03  -5.00483e+05
+   3  theta        2.03625e-02   7.60069e-03   1.06478e-01   2.94959e+03
+   4  pileup       1.00002e-03   9.62751e-08   1.00000e-02  -8.04382e+06
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -5.4495e-04  2.3478e-02  8.4702e-01  3.1301e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.003675 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37861e+11 FROM MIGRAD    STATUS=FAILED        106 CALLS         421 TOTAL
+                     EDM=120.263    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58844e+05   8.73327e+01   5.32939e+00   3.60627e-01
+   2  Q            5.65042e-01   3.09235e-05   1.02991e-04   1.12423e+06
+   3  theta        1.59250e-02   7.73058e-03   4.25911e-02   2.22929e+02
+   4  pileup       9.99998e-04   2.52343e-07   2.14096e-05   1.68492e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  7.627e+03 -2.591e-03 -1.330e-01 -4.024e-06 
+ -2.591e-03  9.563e-10  1.087e-07  3.214e-12 
+ -1.330e-01  1.087e-07  5.976e-05  1.812e-09 
+ -4.024e-06  3.214e-12  1.812e-09  6.368e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99656   1.000 -0.959 -0.197 -0.183
+        2  0.99717  -0.959  1.000  0.455  0.412
+        3  0.98217  -0.197  0.455  1.000  0.929
+        4  0.93727  -0.183  0.412  0.929  1.000
+ ERR MATRIX NOT POS-DEF
+ **********
+ **    4 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37861e+11 FROM MIGRAD    STATUS=INITIATE        8 CALLS         429 TOTAL
+                     EDM=353.032    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58844e+05   8.73327e+01   5.32939e+00   3.60586e-01
+   2  Q            5.65042e-01   3.09235e-05   1.02991e-04   1.12438e+06
+   3  theta        1.59250e-02   7.73058e-03   4.25911e-02   3.23824e+03
+   4  pileup       9.99998e-04   2.52343e-07   2.14096e-05   1.21563e+07
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -3.5829e-02  3.3982e-02  1.7554e-01  3.8263e+00
+ MINUIT WARNING IN MIGRAD  
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.039655 TO DIAGONAL.
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -3.7126e-01  3.6353e-01  6.7721e-01  3.3305e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.374588 TO DIAGONAL.
+ FCN=-2.37861e+11 FROM HESSE     STATUS=NOT POSDEF     29 CALLS         487 TOTAL
+                     EDM=23.2531    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58860e+05   1.92517e+01   1.06588e+02  -4.47629e-01
+   2  Q            5.65028e-01   5.30011e-06   5.54880e-04  -1.38747e+06
+   3  theta        8.68018e-03   5.17449e-03   1.67607e-01   9.04404e+02
+   4  pileup       9.99778e-04   1.19404e-07   2.09884e-05  -3.92503e+07
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -4.8286e-05  3.0278e-01  8.5007e-01  2.8472e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.002895 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37861e+11 FROM MIGRAD    STATUS=FAILED        115 CALLS         536 TOTAL
+                     EDM=1.05    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58885e+05   9.57307e+01   2.13176e+02   3.43591e-02
+   2  Q            5.65022e-01   3.10483e-05   9.71150e-05   1.14498e+05
+   3  theta        2.37486e-03   1.82953e-03   6.70429e-02  -7.37188e+01
+   4  pileup       9.99921e-04   1.07888e-07   8.39538e-06   1.32410e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  9.164e+03 -2.957e-03 -1.684e-02 -4.445e-07 
+ -2.957e-03  9.640e-10  8.982e-09  1.690e-13 
+ -1.684e-02  8.982e-09  3.347e-06  9.825e-11 
+ -4.445e-07  1.690e-13  9.825e-11  1.164e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99714   1.000 -0.995 -0.096 -0.043
+        2  0.99719  -0.995  1.000  0.158  0.050
+        3  0.76810  -0.096  0.158  1.000  0.498
+        4  0.57846  -0.043  0.050  0.498  1.000
+ ERR MATRIX NOT POS-DEF
+status of the fit-----000------4
+1  558885
+2  0.565022
+3  0.00237486
+4  0.000999921
+ **********
+ **   32 **SET PRINT           2
+ **********
+ **********
+ **   33 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 p0           5.58000e+05  1.67400e+05     no limits
+     2 p1           5.65000e-01  1.69500e-01     no limits
+     3 p2           0.00000e+00  3.00000e-01     no limits
+     4 p3           9.99871e-04  2.99961e-04     no limits
+ **********
+ **   34 **SET ERR         0.5
+ **********
+ **********
+ **   35 **SET PRINT           2
+ **********
+ **********
+ **   36 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **   37 **MIGRAD        1480        0.01
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-05
+ FCN=17529.6 FROM MIGRAD    STATUS=INITIATE       20 CALLS          21 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58000e+05   1.67400e+05   1.67400e+05  -3.65065e+01
+   2  p1           5.65000e-01   1.69500e-01   1.69500e-01  -1.13321e+08
+   3  p2           0.00000e+00   3.00000e-01   3.00000e-01   0.00000e+00
+   4  p3           9.99871e-04   2.99961e-04   2.99961e-04  -9.59056e+08
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+ FCN=526.556 FROM MIGRAD    STATUS=PROGRESS       36 CALLS          37 TOTAL
+                     EDM=1518.83    STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58443e+05   1.67400e+05   4.42922e+02  -8.42145e-01
+   2  p1           5.65143e-01   1.69500e-01   1.42830e-04  -2.58713e+06
+   3  p2           0.00000e+00   3.00000e-01  -0.00000e+00   0.00000e+00
+   4  p3           1.00160e-03   2.99961e-04   1.72533e-06   4.31515e+08
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+   START COVARIANCE MATRIX CALCULATION.
+ MINUIT WARNING IN HESSE   
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN HESSE   
+ ============== 30640.3 added to diagonal of error matrix
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.0982e+01  9.5198e-01  1.0000e+00  1.3030e+01
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 10.995016 TO DIAGONAL.
+ FCN=61.9062 FROM MIGRAD    STATUS=CONVERGED      80 CALLS          81 TOTAL
+                     EDM=3.9028e-06    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58482e+05   1.64950e-03   2.66305e-01  -5.43057e-05
+   2  p1           5.65155e-01   6.53568e-07   2.69487e-07   1.58695e+02
+   3  p2           0.00000e+00   6.20007e+00   3.56855e-05   0.00000e+00
+   4  p3           9.99595e-04   3.76957e-07   4.76644e-10   5.04893e+03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  2.721e-06  2.334e-13 -4.236e-06  2.564e-13 
+  2.334e-13  4.272e-13 -2.776e-06  1.683e-13 
+ -4.236e-06 -2.776e-06  3.844e+01 -2.335e-06 
+  2.564e-13  1.683e-13 -2.335e-06  1.421e-13 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.00043   1.000  0.000 -0.000  0.000
+        2  0.68530   0.000  1.000 -0.685  0.683
+        3  0.99892  -0.000 -0.685  1.000 -0.999
+        4  0.99891   0.000  0.683 -0.999  1.000
+ ERR MATRIX NOT POS-DEF
+ **********
+ **   38 **HESSE        1480
+ **********
+   START COVARIANCE MATRIX CALCULATION.
+ MINUIT WARNING IN HESSE   
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN HESSE   
+ ============== 30640.3 added to diagonal of error matrix
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         4.1047e-01  9.9990e-01  1.1248e+00  1.4648e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=61.9062 FROM HESSE     STATUS=OK             27 CALLS         108 TOTAL
+                     EDM=1.13055e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  p0           5.58482e+05   5.71303e-03   1.33152e-01   5.58482e+05
+   2  p1           5.65155e-01   1.83889e-06   1.34744e-07   5.65155e-01
+   3  p2           0.00000e+00   1.14331e+00   3.56855e-05   0.00000e+00
+   4  p3           9.99595e-04   7.51644e-08   1.00217e-08   9.99595e-04
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  3.264e-05 -3.463e-11 -4.958e-05  1.537e-12 
+ -3.463e-11  3.382e-12  6.373e-07 -5.933e-14 
+ -4.958e-05  6.373e-07  1.307e+00 -4.054e-08 
+  1.537e-12 -5.933e-14 -4.054e-08  5.650e-15 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.00767   1.000 -0.003 -0.008  0.004
+        2  0.44414  -0.003  1.000  0.303 -0.429
+        3  0.48474  -0.008  0.303  1.000 -0.472
+        4  0.55925   0.004 -0.429 -0.472  1.000
+ EXTERNAL ERROR MATRIX.    NDIM=   4    NPAR=  4    ERR DEF=0.5
+  3.264e-05 -3.463e-11 -4.958e-05  1.537e-12 
+ -3.463e-11  3.382e-12  6.373e-07 -5.933e-14 
+ -4.958e-05  6.373e-07  1.307e+00 -4.054e-08 
+  1.537e-12 -5.933e-14 -4.054e-08  5.650e-15 
+ FCN=61.9062 FROM HESSE     STATUS=OK             27 CALLS         108 TOTAL
+                     EDM=1.13055e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  p0           5.58482e+05   5.71303e-03                            
+   2  p1           5.65155e-01   1.83889e-06                            
+   3  p2           0.00000e+00   1.14331e+00                            
+   4  p3           9.99595e-04   7.51644e-08                            
+                               ERR DEF= 0.5
+------------------------------------------
+Enering ROOFIt-------
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.58482e+05  1.00000e-01     no limits
+     2 Q            5.65000e-01  1.00000e-01     no limits
+     3 theta        0.00000e+00  1.00000e-01     no limits
+     4 pileup       9.99595e-04  1.00000e-01     no limits
+ **********
+ **    1 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37862e+11 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58482e+05   1.00000e-01   1.00000e-01  -1.83996e+01
+   2  Q            5.65000e-01   1.00000e-01   1.00000e-01  -2.74353e+08
+   3  theta        0.00000e+00   1.00000e-01   1.00000e-01   0.00000e+00
+   4  pileup       9.99595e-04   1.00000e-01   1.00000e-01  -9.18637e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.0170e-01  4.8924e-01  6.6597e-01  2.9465e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.104649 TO DIAGONAL.
+ FCN=-2.37862e+11 FROM HESSE     STATUS=NOT POSDEF     27 CALLS          93 TOTAL
+                     EDM=742.375    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58901e+05   1.40376e+01   2.66305e+02   5.39484e-01
+   2  Q            5.65005e-01   4.96147e-06   5.54926e-04   1.70930e+06
+   3  theta        0.00000e+00   9.50090e-03   1.17053e-01   0.00000e+00
+   4  pileup       1.00187e-03   9.77702e-08   2.10151e-05   5.31312e+08
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -2.6197e-04  4.0217e-01  8.5172e-01  2.7464e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.003008 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37862e+11 FROM MIGRAD    STATUS=FAILED        178 CALLS         179 TOTAL
+                     EDM=4.98601    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58947e+05   9.72723e+01   1.72561e+03  -6.37842e-02
+   2  Q            5.65004e-01   3.16591e-05   9.41760e-05  -1.96637e+05
+   3  theta       -2.13473e-03   1.00317e-03   1.09478e-01   4.49805e+01
+   4  pileup       9.99745e-04   1.02717e-07   2.09846e-05   2.98434e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  9.462e+03 -3.066e-03 -1.979e-02 -6.854e-07 
+ -3.066e-03  1.002e-09  7.949e-09  2.091e-13 
+ -1.979e-02  7.949e-09  1.006e-06  4.255e-11 
+ -6.854e-07  2.091e-13  4.255e-11  1.055e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99723   1.000 -0.996 -0.203 -0.069
+        2  0.99730  -0.996  1.000  0.250  0.064
+        3  0.70291  -0.203  0.250  1.000  0.413
+        4  0.51591  -0.069  0.064  0.413  1.000
+ ERR MATRIX NOT POS-DEF
+ **********
+ **    2 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37862e+11 FROM MIGRAD    STATUS=INITIATE        8 CALLS         187 TOTAL
+                     EDM=2.60407    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58947e+05   9.72723e+01   1.72561e+03  -7.40189e-02
+   2  Q            5.65004e-01   3.16591e-05   9.41760e-05  -1.96323e+05
+   3  theta       -2.13473e-03   1.00317e-03   1.09478e-01  -2.63199e+03
+   4  pileup       9.99745e-04   1.02717e-07   2.09846e-05   2.53333e+07
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.2346e-04  4.0012e-01  8.5272e-01  2.7473e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.002871 TO DIAGONAL.
+ FCN=-2.37862e+11 FROM HESSE     STATUS=NOT POSDEF     29 CALLS         327 TOTAL
+                     EDM=1.73514    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58975e+05   9.77400e+01   1.72584e+03   1.73483e-01
+   2  Q            5.64997e-01   3.15094e-05   9.41231e-05   5.39200e+05
+   3  theta       -1.39635e-03   2.46688e-03   4.47756e-02   6.38799e+01
+   4  pileup       9.99672e-04   1.02664e-07   2.09848e-05   1.99809e+07
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -5.9156e-03  4.7822e-01  1.3974e+00  2.1303e+00
+ MINUIT WARNING IN MIGRAD  
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.008046 TO DIAGONAL.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -2.6977e-01  2.9208e-01  9.8172e-01  2.9960e+00
+ MINUIT WARNING IN MIGRAD  
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.272764 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37862e+11 FROM MIGRAD    STATUS=FAILED        221 CALLS         400 TOTAL
+                     EDM=89.4811    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58974e+05   8.06432e+00   2.76132e-01  -8.04718e-02
+   2  Q            5.64997e-01   3.35061e-09   2.40256e-09  -2.86501e+08
+   3  theta       -2.52040e-03   3.04622e-05   9.00930e-06  -1.80411e+04
+   4  pileup       9.99621e-04   9.72299e-08   1.89321e-09  -2.58731e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  6.503e+01  1.875e-08  1.566e-04 -3.451e-07 
+  1.875e-08 -1.123e-17  4.722e-14 -3.362e-16 
+  1.566e-04  4.722e-14  9.279e-10 -2.794e-12 
+ -3.451e-07 -3.362e-16 -2.794e-12  9.454e-15 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.00000   1.000  0.694  0.638 -0.440
+        2  0.00000   0.694 -1.000  0.463 -1.032
+        3  0.00000   0.638  0.463  1.000 -0.943
+        4  0.00000  -0.440 -1.032 -0.943  1.000
+ ERR MATRIX NOT POS-DEF
+status of the fit-----000------4
+1  558974
+2  0.564997
+3  -0.0025204
+4  0.000999621
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.58974e+05  1.00000e-01     no limits
+     2 Q            5.64997e-01  1.00000e-01     no limits
+     3 theta       -2.52040e-03  1.00000e-01     no limits
+     4 pileup       9.99621e-04  1.00000e-01     no limits
+ **********
+ **    3 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37862e+11 FROM MIGRAD    STATUS=INITIATE       14 CALLS         415 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58974e+05   1.00000e-01   1.00000e-01  -1.58404e-02
+   2  Q            5.64997e-01   1.00000e-01   1.00000e-01   6.72147e+06
+   3  theta       -2.52040e-03   1.00000e-01   1.00000e-01  -1.65417e+04
+   4  pileup       9.99621e-04   1.00000e-01   1.00000e-01  -9.17982e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2.37862e+11 FROM HESSE     STATUS=OK             29 CALLS         455 TOTAL
+                     EDM=0.392961    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58974e+05   3.28671e+01   2.66540e+00  -1.60294e-02
+   2  Q            5.64997e-01   2.82011e-06   1.00000e-03  -5.08812e+04
+   3  theta       -2.52040e-03   2.40195e-03   1.00000e-01  -6.30258e+02
+   4  pileup       9.99621e-04   9.24354e-08   1.00000e-02   2.02097e+06
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=-2.37862e+11 FROM MIGRAD    STATUS=CONVERGED      65 CALLS         466 TOTAL
+                     EDM=0.392961    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58974e+05   3.28671e+01  -0.00000e+00  -1.60294e-02
+   2  Q            5.64997e-01   2.82011e-06   0.00000e+00  -5.08812e+04
+   3  theta       -2.52040e-03   2.40195e-03   0.00000e+00  -6.30258e+02
+   4  pileup       9.99621e-04   9.24354e-08  -0.00000e+00   2.02097e+06
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  1.080e+03 -8.915e-05 -6.459e-02  2.053e-08 
+ -8.915e-05  7.953e-12  6.202e-09 -1.046e-14 
+ -6.459e-02  6.202e-09  5.769e-06  4.303e-13 
+  2.053e-08 -1.046e-14  4.303e-13  8.544e-15 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.97541   1.000 -0.962 -0.818  0.007
+        2  0.98817  -0.962  1.000  0.916 -0.040
+        3  0.94583  -0.818  0.916  1.000  0.002
+        4  0.23231   0.007 -0.040  0.002  1.000
+ **********
+ **    4 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37862e+11 FROM MIGRAD    STATUS=INITIATE       10 CALLS         476 TOTAL
+                     EDM=397.048    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58974e+05   3.28671e+01  -0.00000e+00  -1.58490e-02
+   2  Q            5.64997e-01   2.82011e-06   0.00000e+00  -5.07893e+04
+   3  theta       -2.52040e-03   2.40195e-03   0.00000e+00  -1.66795e+04
+   4  pileup       9.99621e-04   9.24354e-08  -0.00000e+00  -2.70431e+07
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=-2.37862e+11 FROM MIGRAD    STATUS=CONVERGED      21 CALLS         487 TOTAL
+                     EDM=397.048    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58974e+05   3.28671e+01  -0.00000e+00  -1.58490e-02
+   2  Q            5.64997e-01   2.82011e-06   0.00000e+00  -5.07893e+04
+   3  theta       -2.52040e-03   2.40195e-03   0.00000e+00  -1.66795e+04
+   4  pileup       9.99621e-04   9.24354e-08   0.00000e+00  -2.70431e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  1.080e+03 -8.915e-05 -6.459e-02  2.053e-08 
+ -8.915e-05  7.953e-12  6.202e-09 -1.046e-14 
+ -6.459e-02  6.202e-09  5.769e-06  4.303e-13 
+  2.053e-08 -1.046e-14  4.303e-13  8.544e-15 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.97541   1.000 -0.962 -0.818  0.007
+        2  0.98817  -0.962  1.000  0.916 -0.040
+        3  0.94583  -0.818  0.916  1.000  0.002
+        4  0.23231   0.007 -0.040  0.002  1.000
+status of the fit-----000------0
+1  558974
+2  0.564997
+3  -0.0025204
+4  0.000999621
+ **********
+ **   39 **SET PRINT           2
+ **********
+ **********
+ **   40 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 p0           5.58000e+05  1.67400e+05     no limits
+     2 p1           5.65000e-01  1.69500e-01     no limits
+     3 p2           0.00000e+00  3.00000e-01     no limits
+     4 p3           9.99871e-04  2.99961e-04     no limits
+ **********
+ **   41 **SET ERR         0.5
+ **********
+ **********
+ **   42 **SET PRINT           2
+ **********
+ **********
+ **   43 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **   44 **MIGRAD        1480        0.01
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-05
+ FCN=17072.5 FROM MIGRAD    STATUS=INITIATE       18 CALLS          19 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58000e+05   1.67400e+05   1.67400e+05  -3.60244e+01
+   2  p1           5.65000e-01   1.69500e-01   1.69500e-01  -1.11829e+08
+   3  p2           0.00000e+00   3.00000e-01   3.00000e-01   0.00000e+00
+   4  p3           9.99871e-04   2.99961e-04   2.99961e-04  -9.80158e+08
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+ FCN=482.335 FROM MIGRAD    STATUS=PROGRESS       34 CALLS          35 TOTAL
+                     EDM=1349.34    STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58436e+05   1.67400e+05   4.36410e+02  -8.19767e-01
+   2  p1           5.65141e-01   1.69500e-01   1.40734e-04  -2.52207e+06
+   3  p2           0.00000e+00   3.00000e-01  -0.00000e+00   0.00000e+00
+   4  p3           1.00163e-03   2.99961e-04   1.76043e-06   4.06038e+08
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         1.6952e-03  8.1012e-01  1.0098e+00  2.1784e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=68.5176 FROM HESSE     STATUS=OK             27 CALLS         185 TOTAL
+                     EDM=2.83251e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.57602e+05   8.73794e+01   2.65886e-01  -6.50459e-05
+   2  p1           5.65434e-01   2.84327e-05   2.69620e-07  -1.83242e+02
+   3  p2           0.00000e+00   1.84061e-02   1.17437e-04   0.00000e+00
+   4  p3           9.99727e-04   6.90134e-08   4.76707e-10  -3.23339e+04
+                               ERR DEF= 0.5
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99829   1.000 -0.998  0.310  0.366
+        2  0.99832  -0.998  1.000 -0.309 -0.384
+        3  0.31750   0.310 -0.309  1.000  0.175
+        4  0.48297   0.366 -0.384  0.175  1.000
+ FCN=68.5176 FROM MIGRAD    STATUS=PROGRESS      194 CALLS         195 TOTAL
+                     EDM=2.48471e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.57602e+05   8.73794e+01   4.40628e-02  -3.78758e-05
+   2  p1           5.65434e-01   2.84327e-05  -1.45598e-08  -1.09019e+02
+   3  p2           3.85125e-06   1.84061e-02   3.85125e-06   5.98524e-04
+   4  p3           9.99727e-04   6.90134e-08   6.18103e-11  -9.07796e+03
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=68.5176 FROM MIGRAD    STATUS=CONVERGED     194 CALLS         195 TOTAL
+                     EDM=2.48471e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.6 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.57602e+05   8.31449e+01   4.40628e-02  -3.78758e-05
+   2  p1           5.65434e-01   2.69417e-05  -1.45598e-08  -1.09019e+02
+   3  p2           3.85125e-06   1.82131e-02   3.85125e-06   5.98524e-04
+   4  p3           9.99727e-04   5.09868e-08   6.18103e-11  -9.07796e+03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  6.913e+03 -2.236e-03  4.263e-01  9.419e-07 
+ -2.236e-03  7.259e-10 -1.375e-07 -3.274e-13 
+  4.263e-01 -1.375e-07  3.317e-04  9.787e-11 
+  9.419e-07 -3.274e-13  9.787e-11  2.600e-15 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99811   1.000 -0.998  0.281  0.222
+        2  0.99812  -0.998  1.000 -0.280 -0.238
+        3  0.28591   0.281 -0.280  1.000  0.105
+        4  0.34561   0.222 -0.238  0.105  1.000
+ EXTERNAL ERROR MATRIX.    NDIM=   4    NPAR=  4    ERR DEF=0.5
+  6.913e+03 -2.236e-03  4.263e-01  9.419e-07 
+ -2.236e-03  7.259e-10 -1.375e-07 -3.274e-13 
+  4.263e-01 -1.375e-07  3.317e-04  9.787e-11 
+  9.419e-07 -3.274e-13  9.787e-11  2.600e-15 
+ FCN=68.5176 FROM MIGRAD    STATUS=CONVERGED     194 CALLS         195 TOTAL
+                     EDM=2.48471e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.6 per cent
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  p0           5.57602e+05   8.31449e+01                            
+   2  p1           5.65434e-01   2.69417e-05                            
+   3  p2           3.85125e-06   1.82131e-02                            
+   4  p3           9.99727e-04   5.09868e-08                            
+                               ERR DEF= 0.5
+------------------------------------------
+Enering ROOFIt-------
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.57602e+05  1.00000e-01     no limits
+     2 Q            5.65000e-01  1.00000e-01     no limits
+     3 theta        0.00000e+00  1.00000e-01     no limits
+     4 pileup       9.99727e-04  1.00000e-01     no limits
+ **********
+ **    1 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37857e+11 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.57602e+05   1.00000e-01   1.00000e-01  -5.13792e+01
+   2  Q            5.65000e-01   1.00000e-01   1.00000e-01  -7.79072e+08
+   3  theta        0.00000e+00   1.00000e-01   1.00000e-01   0.00000e+00
+   4  pileup       9.99727e-04   1.00000e-01   1.00000e-01  -9.19872e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -2.9489e-01  4.2781e-01  6.6785e-01  3.1992e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.298093 TO DIAGONAL.
+ FCN=-2.37857e+11 FROM HESSE     STATUS=NOT POSDEF     25 CALLS          92 TOTAL
+                     EDM=4269.86    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58785e+05   9.45511e+00   1.72565e+03   1.39232e+00
+   2  Q            5.65013e-01   4.88034e-06   5.55020e-04   4.41400e+06
+   3  theta        0.00000e+00   9.85572e-03   1.17781e-01   0.00000e+00
+   4  pileup       1.00540e-03   9.10754e-08   2.10617e-05   1.31824e+09
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.4590e-01  4.4132e-01  6.7146e-01  3.0331e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.148930 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37857e+11 FROM MIGRAD    STATUS=FAILED        194 CALLS         195 TOTAL
+                     EDM=0.752985    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58899e+05   1.31586e+01   1.72549e+03   1.14275e-01
+   2  Q            5.65017e-01   5.39388e-06   5.54888e-04   3.54140e+05
+   3  theta       -6.00773e-06   8.57176e-03   1.09502e-01  -1.81151e-01
+   4  pileup       9.99736e-04   1.42435e-07   2.09961e-05  -8.43239e+05
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  1.731e+02 -5.628e-05 -8.581e-02  1.080e-06 
+ -5.628e-05  2.909e-11  4.601e-08 -5.825e-13 
+ -8.581e-02  4.601e-08  7.348e-05 -8.915e-10 
+  1.080e-06 -5.825e-13 -8.915e-10  2.029e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.85794   1.000 -0.793 -0.761  0.576
+        2  0.99760  -0.793  1.000  0.995 -0.758
+        3  0.99700  -0.761  0.995  1.000 -0.730
+        4  0.81662   0.576 -0.758 -0.730  1.000
+ ERR MATRIX NOT POS-DEF
+ **********
+ **    2 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37857e+11 FROM MIGRAD    STATUS=INITIATE        8 CALLS         203 TOTAL
+                     EDM=0.695826    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58899e+05   1.31586e+01   1.72549e+03   1.04040e-01
+   2  Q            5.65017e-01   5.39388e-06   5.54888e-04   3.54219e+05
+   3  theta       -6.00773e-06   8.57176e-03   1.09502e-01  -7.70518e+00
+   4  pileup       9.99736e-04   1.42435e-07   2.09961e-05  -5.35902e+06
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -4.4434e-02  4.6452e-01  1.0883e+00  2.4916e+00
+ MINUIT WARNING IN MIGRAD  
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.046926 TO DIAGONAL.
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.4650e-01  4.4162e-01  6.7176e-01  3.0331e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.149530 TO DIAGONAL.
+ FCN=-2.37857e+11 FROM HESSE     STATUS=NOT POSDEF     31 CALLS         307 TOTAL
+                     EDM=0.0337373    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58899e+05   1.30884e+01   1.72561e+03   2.77539e-02
+   2  Q            5.65016e-01   5.39439e-06   5.54889e-04   8.53910e+04
+   3  theta        2.36190e-04   1.77769e-02   5.21840e-02   5.76766e+00
+   4  pileup       9.99764e-04   1.43767e-07   2.09850e-05   3.13438e+06
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37857e+11 FROM MIGRAD    STATUS=FAILED        148 CALLS         343 TOTAL
+                     EDM=1.14229e+06    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58898e+05   8.29962e+00  -0.00000e+00  -7.01854e-02
+   2  Q            5.65016e-01   1.00000e+00  -0.00000e+00   1.32773e+09
+   3  theta        2.37094e-04   1.00000e+00  -0.00000e+00   6.65711e+03
+   4  pileup       9.99753e-04   1.00000e+00   0.00000e+00  -2.86541e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  6.888e+01 -3.332e-08  7.347e-03 -2.748e-08 
+ -3.332e-08  1.000e+00 -1.440e-11 -2.151e-16 
+  7.347e-03 -1.440e-11  1.000e+00  6.259e-11 
+ -2.748e-08 -2.151e-16  6.259e-11  1.000e+00 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.00089   1.000 -0.000  0.001 -0.000
+        2  0.00000  -0.000  1.000 -0.000 -0.000
+        3  0.00089   0.001 -0.000  1.000  0.000
+        4  0.00000  -0.000 -0.000  0.000  1.000
+ ERR MATRIX NOT POS-DEF
+status of the fit-----000------4
+1  558898
+2  0.565016
+3  0.000237094
+4  0.000999753
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.58898e+05  1.00000e-01     no limits
+     2 Q            5.65016e-01  1.00000e-01     no limits
+     3 theta        2.37094e-04  1.00000e-01     no limits
+     4 pileup       9.99753e-04  1.00000e-01     no limits
+ **********
+ **    3 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37857e+11 FROM MIGRAD    STATUS=INITIATE       14 CALLS         358 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58898e+05   1.00000e-01   1.00000e-01  -5.58814e-03
+   2  Q            5.65016e-01   1.00000e-01   1.00000e-01   5.09153e+06
+   3  theta        2.37094e-04   1.00000e-01   1.00000e-01   1.56364e+03
+   4  pileup       9.99753e-04   1.00000e-01   1.00000e-01  -9.18036e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2.37857e+11 FROM HESSE     STATUS=OK             29 CALLS         398 TOTAL
+                     EDM=0.0700285    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58898e+05   1.13229e+02   2.66503e+00  -5.66830e-03
+   2  Q            5.65016e-01   1.07455e-05   1.00000e-03  -1.86426e+04
+   3  theta        2.37094e-04   9.36060e-03   1.00000e-01   8.98743e+00
+   4  pileup       9.99753e-04   9.24360e-08   1.00000e-02  -7.60921e+05
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37857e+11 FROM MIGRAD    STATUS=FAILED         94 CALLS         438 TOTAL
+                     EDM=4.67687e+07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58898e+05   9.16173e+00   0.00000e+00   2.08496e-03
+   2  Q            5.65016e-01   1.00000e+00  -0.00000e+00   1.32781e+09
+   3  theta        2.13903e-04   1.00000e+00  -0.00000e+00   3.28355e+02
+   4  pileup       9.99753e-04   1.00000e+00   0.00000e+00  -2.84342e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  8.394e+01 -4.445e-10  5.504e-03  6.200e-08 
+ -4.445e-10  1.000e+00 -8.747e-14 -7.835e-19 
+  5.504e-03 -8.747e-14  1.000e+00  8.952e-12 
+  6.200e-08 -7.835e-19  8.952e-12  1.000e+00 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.00060   1.000 -0.000  0.001  0.000
+        2  0.00000  -0.000  1.000 -0.000 -0.000
+        3  0.00060   0.001 -0.000  1.000  0.000
+        4  0.00000   0.000 -0.000  0.000  1.000
+ ERR MATRIX APPROXIMATE
+ **********
+ **    4 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37857e+11 FROM MIGRAD    STATUS=INITIATE       14 CALLS         452 TOTAL
+                     EDM=1.75848e+16    STRATEGY= 1  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58898e+05   9.16173e+00   0.00000e+00  -4.01974e-03
+   2  Q            5.65016e-01   1.00000e+00  -0.00000e+00   5.39140e+03
+   3  theta        2.13903e-04   1.00000e+00  -0.00000e+00   3.59080e+02
+   4  pileup       9.99753e-04   1.00000e+00   0.00000e+00  -2.84344e+07
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -3.2459e-05  3.8177e-01  8.5181e-01  2.7665e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.002799 TO DIAGONAL.
+ FCN=-2.37857e+11 FROM HESSE     STATUS=NOT POSDEF     29 CALLS         492 TOTAL
+                     EDM=0.00348719    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58898e+05   9.73414e+01   5.33007e+02   2.13492e-03
+   2  Q            5.65016e-01   3.14188e-05   9.53300e-05   5.31329e+03
+   3  theta        2.13903e-04   2.14422e-03   5.00455e-02   6.23517e+00
+   4  pileup       9.99753e-04   1.03435e-07   2.09848e-05  -1.09094e+06
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -2.9663e+00  2.7563e-03  1.2407e+00  5.7228e+00
+ MINUIT WARNING IN MIGRAD  
+ ============== MATRIX FORCED POS-DEF BY ADDING 2.971981 TO DIAGONAL.
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.9152e-04  4.3414e-01  8.5381e-01  2.7122e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.002904 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37857e+11 FROM MIGRAD    STATUS=FAILED        109 CALLS         547 TOTAL
+                     EDM=0.00182789    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58898e+05   9.84944e+01   2.13203e+02   2.24728e-03
+   2  Q            5.65016e-01   3.16667e-05   1.90660e-04   5.64622e+03
+   3  theta        2.16109e-04   4.69364e-03   2.00182e-02   5.67873e+00
+   4  pileup       9.99754e-04   1.01471e-07   2.09848e-05   1.00054e+05
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  9.701e+03 -3.106e-03  1.708e-02  1.907e-07 
+ -3.106e-03  1.003e-09  1.161e-09 -8.396e-14 
+  1.708e-02  1.161e-09  2.203e-05  1.846e-10 
+  1.907e-07 -8.396e-14  1.846e-10  1.030e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99730   1.000 -0.996  0.037  0.019
+        2  0.99730  -0.996  1.000  0.008 -0.026
+        3  0.65586   0.037  0.008  1.000  0.388
+        4  0.49801   0.019 -0.026  0.388  1.000
+ ERR MATRIX NOT POS-DEF
+status of the fit-----000------4
+1  558898
+2  0.565016
+3  0.000216109
+4  0.000999754
+ **********
+ **   45 **SET PRINT           2
+ **********
+ **********
+ **   46 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 p0           5.58000e+05  1.67400e+05     no limits
+     2 p1           5.65000e-01  1.69500e-01     no limits
+     3 p2           0.00000e+00  3.00000e-01     no limits
+     4 p3           9.99871e-04  2.99961e-04     no limits
+ **********
+ **   47 **SET ERR         0.5
+ **********
+ **********
+ **   48 **SET PRINT           2
+ **********
+ **********
+ **   49 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **   50 **MIGRAD        1480        0.01
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-05
+ FCN=17728 FROM MIGRAD    STATUS=INITIATE       18 CALLS          19 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58000e+05   1.67400e+05   1.67400e+05  -3.67019e+01
+   2  p1           5.65000e-01   1.69500e-01   1.69500e-01  -1.13927e+08
+   3  p2           0.00000e+00   3.00000e-01   3.00000e-01   0.00000e+00
+   4  p3           9.99871e-04   2.99961e-04   2.99961e-04  -9.96910e+08
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+ FCN=510.661 FROM MIGRAD    STATUS=PROGRESS       34 CALLS          35 TOTAL
+                     EDM=1406.92    STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58445e+05   1.67400e+05   4.44641e+02  -8.36585e-01
+   2  p1           5.65143e-01   1.69500e-01   1.43385e-04  -2.56856e+06
+   3  p2           0.00000e+00   3.00000e-01  -0.00000e+00   0.00000e+00
+   4  p3           1.00166e-03   2.99961e-04   1.79064e-06   4.14652e+08
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+   START COVARIANCE MATRIX CALCULATION.
+ MINUIT WARNING IN HESSE   
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN HESSE   
+ ============== 2876.78 added to diagonal of error matrix
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.7906e+00  7.1378e-01  1.0000e+00  4.0768e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 1.794646 TO DIAGONAL.
+ FCN=79.1683 FROM HESSE     STATUS=NOT POSDEF     25 CALLS         165 TOTAL
+                     EDM=7.7159e-05    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.59415e+05   1.11537e-02   2.66750e-01   1.60253e-04
+   2  p1           5.64855e-01   8.09528e-06   2.69344e-07   4.82402e+02
+   3  p2           0.00000e+00   1.13259e+01   1.12604e-04   0.00000e+00
+   4  p3           9.99754e-04   5.87299e-07   4.76720e-10   1.45498e+04
+                               ERR DEF= 0.5
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.01305   1.000  0.013  0.013  0.013
+        2  0.99256   0.013  1.000  0.992  0.990
+        3  0.99860   0.013  0.992  1.000  0.998
+        4  0.99808   0.013  0.990  0.998  1.000
+ ERR MATRIX NOT POS-DEF
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=79.1683 FROM MIGRAD    STATUS=FAILED        166 CALLS         167 TOTAL
+                     EDM=7.7159e-05    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.59415e+05   1.11537e-02  -0.00000e+00   1.60253e-04
+   2  p1           5.64855e-01   8.09528e-06  -0.00000e+00   4.82402e+02
+   3  p2           0.00000e+00   1.13259e+01  -0.00000e+00   0.00000e+00
+   4  p3           9.99754e-04   5.87299e-07  -0.00000e+00   1.45498e+04
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  1.244e-04  1.149e-09  1.640e-03  8.476e-11 
+  1.149e-09  6.553e-11  9.100e-05  4.705e-12 
+  1.640e-03  9.100e-05  1.283e+02  6.639e-06 
+  8.476e-11  4.705e-12  6.639e-06  3.449e-13 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.01305   1.000  0.013  0.013  0.013
+        2  0.99256   0.013  1.000  0.992  0.990
+        3  0.99860   0.013  0.992  1.000  0.998
+        4  0.99808   0.013  0.990  0.998  1.000
+ ERR MATRIX NOT POS-DEF
+ FCN=79.1683 FROM MIGRAD    STATUS=FAILED        166 CALLS         167 TOTAL
+                     EDM=7.7159e-05    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  p0           5.59415e+05   1.11537e-02                            
+   2  p1           5.64855e-01   8.09528e-06                            
+   3  p2           0.00000e+00   1.13259e+01                            
+   4  p3           9.99754e-04   5.87299e-07                            
+                               ERR DEF= 0.5
+ **********
+ **   51 **SET PRINT           2
+ **********
+ **********
+ **   52 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 p0           5.59415e+05  1.11537e-02     no limits
+     2 p1           5.64855e-01  8.09528e-06     no limits
+     3 p2           0.00000e+00  1.13259e+01     no limits
+     4 p3           9.99754e-04  5.87299e-07     no limits
+ **********
+ **   53 **SET ERR         0.5
+ **********
+ **********
+ **   54 **SET PRINT           2
+ **********
+ **********
+ **   55 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **   56 **MIGRAD        1480        0.01
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-05
+ FCN=79.1683 FROM MIGRAD    STATUS=INITIATE       12 CALLS          13 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.59415e+05   1.11537e-02   1.11537e-02   1.67913e-04
+   2  p1           5.64855e-01   8.09528e-06   8.09528e-06   4.84597e+02
+   3  p2           0.00000e+00   1.13259e+01   1.13259e+01   0.00000e+00
+   4  p3           9.99754e-04   5.87299e-07   5.87299e-07   1.34293e+04
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+ MIGRAD FAILS TO FIND IMPROVEMENT
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         9.5468e-04  3.4705e-01  8.6525e-01  2.7867e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=79.1683 FROM HESSE     STATUS=OK             25 CALLS          39 TOTAL
+                     EDM=1.44797e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.59415e+05   1.17210e+02   2.66750e-01   1.60253e-04
+   2  p1           5.64855e-01   3.77751e-05   2.69344e-07   4.82402e+02
+   3  p2           0.00000e+00   7.31863e-03   1.13259e-02   0.00000e+00
+   4  p3           9.99754e-04   7.35938e-08   5.87299e-10   1.45498e+04
+                               ERR DEF= 0.5
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99904   1.000 -0.998  0.025  0.212
+        2  0.99905  -0.998  1.000  0.008 -0.211
+        3  0.72972   0.025  0.008  1.000  0.446
+        4  0.56665   0.212 -0.211  0.446  1.000
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=79.1683 FROM MIGRAD    STATUS=CONVERGED      39 CALLS          40 TOTAL
+                     EDM=1.44797e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.59415e+05   1.17210e+02  -0.00000e+00   1.60253e-04
+   2  p1           5.64855e-01   3.77751e-05   0.00000e+00   4.82402e+02
+   3  p2           0.00000e+00   7.31863e-03  -0.00000e+00   0.00000e+00
+   4  p3           9.99754e-04   7.35938e-08  -0.00000e+00   1.45498e+04
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  1.374e+04 -4.420e-03  2.184e-02  1.832e-06 
+ -4.420e-03  1.427e-09  2.183e-09 -5.856e-13 
+  2.184e-02  2.183e-09  5.356e-05  2.400e-10 
+  1.832e-06 -5.856e-13  2.400e-10  5.416e-15 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99904   1.000 -0.998  0.025  0.212
+        2  0.99905  -0.998  1.000  0.008 -0.211
+        3  0.72972   0.025  0.008  1.000  0.446
+        4  0.56665   0.212 -0.211  0.446  1.000
+ EXTERNAL ERROR MATRIX.    NDIM=   4    NPAR=  4    ERR DEF=0.5
+  1.374e+04 -4.420e-03  2.184e-02  1.832e-06 
+ -4.420e-03  1.427e-09  2.183e-09 -5.856e-13 
+  2.184e-02  2.183e-09  5.356e-05  2.400e-10 
+  1.832e-06 -5.856e-13  2.400e-10  5.416e-15 
+ FCN=79.1683 FROM MIGRAD    STATUS=CONVERGED      39 CALLS          40 TOTAL
+                     EDM=1.44797e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  p0           5.59415e+05   1.17210e+02                            
+   2  p1           5.64855e-01   3.77751e-05                            
+   3  p2           0.00000e+00   7.31863e-03                            
+   4  p3           9.99754e-04   7.35938e-08                            
+                               ERR DEF= 0.5
+------------------------------------------
+Enering ROOFIt-------
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.59415e+05  1.00000e-01     no limits
+     2 Q            5.65000e-01  1.00000e-01     no limits
+     3 theta        0.00000e+00  1.00000e-01     no limits
+     4 pileup       9.99754e-04  1.00000e-01     no limits
+ **********
+ **    1 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37865e+11 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59415e+05   1.00000e-01   1.00000e-01   1.71246e+01
+   2  Q            5.65000e-01   1.00000e-01   1.00000e-01   2.69155e+08
+   3  theta        0.00000e+00   1.00000e-01   1.00000e-01   0.00000e+00
+   4  pileup       9.99754e-04   1.00000e-01   1.00000e-01  -9.17431e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -3.7818e-01  1.7912e-01  9.1637e-01  3.2827e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.381468 TO DIAGONAL.
+ FCN=-2.37865e+11 FROM HESSE     STATUS=NOT POSDEF     27 CALLS          53 TOTAL
+                     EDM=48386.2    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59415e+05   1.04178e+01   2.66750e+00   1.71246e+01
+   2  Q            5.65000e-01   5.16291e-06   1.00000e-03   5.32954e+07
+   3  theta        0.00000e+00   1.56409e-02   1.00000e-01   0.00000e+00
+   4  pileup       9.99754e-04   1.12819e-07   1.00000e-02   4.79875e+08
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.4595e-04  3.7689e-01  8.5187e-01  2.7714e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.002917 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37865e+11 FROM MIGRAD    STATUS=FAILED        305 CALLS         306 TOTAL
+                     EDM=4.88137    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58919e+05   9.71514e+01   1.72568e+03   9.65079e-02
+   2  Q            5.65015e-01   3.14238e-05   9.52378e-05   3.05627e+05
+   3  theta       -5.86691e-04   1.62909e-03   6.84929e-02   2.33306e+01
+   4  pileup       9.99858e-04   1.03628e-07   2.09868e-05   2.87156e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  9.438e+03 -3.039e-03 -1.134e-02 -1.496e-07 
+ -3.039e-03  9.875e-10  6.304e-09  4.242e-14 
+ -1.134e-02  6.304e-09  2.654e-06  7.259e-11 
+ -1.496e-07  4.242e-14  7.259e-11  1.074e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99722   1.000 -0.996 -0.072 -0.015
+        2  0.99726  -0.996  1.000  0.123  0.013
+        3  0.70709  -0.072  0.123  1.000  0.430
+        4  0.52811  -0.015  0.013  0.430  1.000
+ ERR MATRIX NOT POS-DEF
+ **********
+ **    2 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37865e+11 FROM MIGRAD    STATUS=INITIATE        8 CALLS         314 TOTAL
+                     EDM=1.82184    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58919e+05   9.71514e+01   1.72568e+03   8.62709e-02
+   2  Q            5.65015e-01   3.14238e-05   9.52378e-05   3.05963e+05
+   3  theta       -5.86691e-04   1.62909e-03   6.84929e-02  -2.64628e+02
+   4  pileup       9.99858e-04   1.03628e-07   2.09868e-05   2.42053e+07
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2.37865e+11 FROM HESSE     STATUS=OK             31 CALLS         411 TOTAL
+                     EDM=0.36208    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58965e+05   9.39152e+00   1.72581e+03  -5.73105e-02
+   2  Q            5.65000e-01   1.28092e-06   5.54871e-04  -1.76355e+05
+   3  theta       -1.14688e-03   3.82025e-03   7.04796e-02  -1.40249e+02
+   4  pileup       9.99771e-04   1.04446e-07   2.09852e-05   4.28411e+06
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=-2.37865e+11 FROM MIGRAD    STATUS=CONVERGED     126 CALLS         432 TOTAL
+                     EDM=84.0016    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   5.9 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58967e+05   8.50822e+00   0.00000e+00   1.68993e-02
+   2  Q            5.65000e-01   1.00000e+00  -0.00000e+00   8.62407e+04
+   3  theta       -3.73319e-04   1.00000e+00   0.00000e+00  -4.84314e+03
+   4  pileup       9.99760e-04   1.00000e+00   0.00000e+00  -3.64462e+05
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  7.239e+01 -1.587e-06  4.048e-04 -9.045e-08 
+ -1.587e-06  1.000e+00 -9.169e-11 -2.614e-14 
+  4.048e-04 -9.169e-11  1.000e+00 -8.703e-12 
+ -9.045e-08 -2.614e-14 -8.703e-12  1.000e+00 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.00005   1.000 -0.000  0.000 -0.000
+        2  0.00000  -0.000  1.000 -0.000 -0.000
+        3  0.00005   0.000 -0.000  1.000 -0.000
+        4  0.00000  -0.000 -0.000 -0.000  1.000
+status of the fit-----000------0
+1  558967
+2  0.565
+3  -0.000373319
+4  0.00099976
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.58967e+05  1.00000e-01     no limits
+     2 Q            5.65000e-01  1.00000e-01     no limits
+     3 theta       -3.73319e-04  1.00000e-01     no limits
+     4 pileup       9.99760e-04  1.00000e-01     no limits
+ **********
+ **    3 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37865e+11 FROM MIGRAD    STATUS=INITIATE       14 CALLS         447 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58967e+05   1.00000e-01   1.00000e-01   2.72388e-02
+   2  Q            5.65000e-01   1.00000e-01   1.00000e-01   7.48030e+06
+   3  theta       -3.73319e-04   1.00000e-01   1.00000e-01  -2.44857e+03
+   4  pileup       9.99760e-04   1.00000e-01   1.00000e-01  -9.18037e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2.37865e+11 FROM HESSE     STATUS=OK             29 CALLS         487 TOTAL
+                     EDM=0.857615    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58967e+05   6.88136e+01   2.66536e+00   2.71930e-02
+   2  Q            5.65000e-01   6.44894e-06   1.00000e-03   8.61576e+04
+   3  theta       -3.73319e-04   5.64557e-03   1.00000e-01  -9.23492e+01
+   4  pileup       9.99760e-04   9.24343e-08   1.00000e-02   3.59914e+06
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -7.2802e-02  5.7959e-02  1.1328e+00  2.8820e+00
+ MINUIT WARNING IN MIGRAD  
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.075684 TO DIAGONAL.
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.2091e-04  3.7573e-01  8.5069e-01  2.7737e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.002895 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37865e+11 FROM MIGRAD    STATUS=FAILED        116 CALLS         549 TOTAL
+                     EDM=0.0479789    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58965e+05   9.68018e+01   5.33072e+01  -1.09388e-02
+   2  Q            5.65000e-01   3.15032e-05   9.47300e-05  -3.25826e+04
+   3  theta       -2.79398e-04   1.12306e-03   1.00287e-01  -7.08036e+01
+   4  pileup       9.99759e-04   1.03953e-07   2.09851e-05   2.88099e+06
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  9.371e+03 -3.036e-03 -2.096e-02 -8.084e-07 
+ -3.036e-03  9.925e-10  8.619e-09  2.574e-13 
+ -2.096e-02  8.619e-09  1.261e-06  5.093e-11 
+ -8.084e-07  2.574e-13  5.093e-11  1.081e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99720   1.000 -0.996 -0.193 -0.080
+        2  0.99727  -0.996  1.000  0.244  0.079
+        3  0.72179  -0.193  0.244  1.000  0.436
+        4  0.53243  -0.080  0.079  0.436  1.000
+ ERR MATRIX NOT POS-DEF
+ **********
+ **    4 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37865e+11 FROM MIGRAD    STATUS=INITIATE        8 CALLS         557 TOTAL
+                     EDM=12.5998    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58965e+05   9.68018e+01   5.33072e+01  -1.11949e-02
+   2  Q            5.65000e-01   3.15032e-05   9.47300e-05  -3.22478e+04
+   3  theta       -2.79398e-04   1.12306e-03   1.00287e-01  -6.21944e+03
+   4  pileup       9.99759e-04   1.03953e-07   2.09851e-05  -1.63003e+06
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.5612e-03  3.6504e-01  8.4869e-01  2.7878e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.004349 TO DIAGONAL.
+ FCN=-2.37865e+11 FROM HESSE     STATUS=NOT POSDEF     27 CALLS         595 TOTAL
+                     EDM=0.0255262    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58965e+05   9.51435e+01   1.06614e+02  -1.09552e-02
+   2  Q            5.65000e-01   3.17806e-05   1.89460e-04  -3.25644e+04
+   3  theta       -2.79398e-04   7.35533e-04   1.85371e-01  -2.50296e+02
+   4  pileup       9.99759e-04   1.08206e-07   8.39405e-06   2.91945e+06
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -6.1033e-04  3.7575e-01  8.5246e-01  2.7724e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.003383 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37865e+11 FROM MIGRAD    STATUS=FAILED         97 CALLS         646 TOTAL
+                     EDM=0.00460005    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58965e+05   9.71305e+01   2.13229e+02   9.79844e-03
+   2  Q            5.65000e-01   3.14197e-05   3.78920e-04   3.18958e+04
+   3  theta       -2.54882e-04   1.09709e-03   1.00633e-01  -6.50299e+01
+   4  pileup       9.99747e-04   1.03851e-07   3.35762e-06   7.26896e+05
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  9.434e+03 -3.038e-03 -8.966e-03 -3.524e-07 
+ -3.038e-03  9.872e-10  4.665e-09  1.081e-13 
+ -8.966e-03  4.665e-09  1.204e-06  4.952e-11 
+ -3.524e-07  1.081e-13  4.952e-11  1.079e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99722   1.000 -0.996 -0.084 -0.035
+        2  0.99726  -0.996  1.000  0.135  0.033
+        3  0.70831  -0.084  0.135  1.000  0.435
+        4  0.53135  -0.035  0.033  0.435  1.000
+ ERR MATRIX NOT POS-DEF
+status of the fit-----000------4
+1  558965
+2  0.565
+3  -0.000254882
+4  0.000999747
+ **********
+ **   57 **SET PRINT           2
+ **********
+ **********
+ **   58 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 p0           5.58000e+05  1.67400e+05     no limits
+     2 p1           5.65000e-01  1.69500e-01     no limits
+     3 p2           0.00000e+00  3.00000e-01     no limits
+     4 p3           9.99871e-04  2.99961e-04     no limits
+ **********
+ **   59 **SET ERR         0.5
+ **********
+ **********
+ **   60 **SET PRINT           2
+ **********
+ **********
+ **   61 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **   62 **MIGRAD        1480        0.01
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-05
+ FCN=17016 FROM MIGRAD    STATUS=INITIATE       18 CALLS          19 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58000e+05   1.67400e+05   1.67400e+05  -3.59542e+01
+   2  p1           5.65000e-01   1.69500e-01   1.69500e-01  -1.11608e+08
+   3  p2           0.00000e+00   3.00000e-01   3.00000e-01   0.00000e+00
+   4  p3           9.99871e-04   2.99961e-04   2.99961e-04  -9.86802e+08
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+ FCN=481.992 FROM MIGRAD    STATUS=PROGRESS       34 CALLS          35 TOTAL
+                     EDM=1311.31    STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58435e+05   1.67400e+05   4.35399e+02  -8.15406e-01
+   2  p1           5.65140e-01   1.69500e-01   1.40403e-04  -2.50477e+06
+   3  p2           0.00000e+00   3.00000e-01  -0.00000e+00   0.00000e+00
+   4  p3           1.00164e-03   2.99961e-04   1.77163e-06   4.00106e+08
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+   START COVARIANCE MATRIX CALCULATION.
+ MINUIT WARNING IN HESSE   
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN HESSE   
+ ============== 8720.18 added to diagonal of error matrix
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -7.3709e+00  9.2839e-01  1.0000e+00  9.4425e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 7.380356 TO DIAGONAL.
+ FCN=79.8801 FROM MIGRAD    STATUS=CONVERGED     177 CALLS         178 TOTAL
+                     EDM=1.18938e-06    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.59027e+05   3.69929e-03   2.66565e-01  -8.60792e-05
+   2  p1           5.64974e-01   1.04010e-06   2.69400e-07  -3.21337e+02
+   3  p2           0.00000e+00   7.28908e+00   6.04602e-05   0.00000e+00
+   4  p3           9.99794e-04   4.35009e-07   4.76739e-10  -1.82974e+03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  1.368e-05  2.478e-11  2.119e-04  1.262e-11 
+  2.478e-11  1.082e-12  6.343e-06  3.777e-13 
+  2.119e-04  6.343e-06  5.313e+01  3.167e-06 
+  1.262e-11  3.777e-13  3.167e-06  1.892e-13 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.00786   1.000  0.006  0.008  0.008
+        2  0.83698   0.006  1.000  0.837  0.835
+        3  0.99888   0.008  0.837  1.000  0.999
+        4  0.99886   0.008  0.835  0.999  1.000
+ ERR MATRIX NOT POS-DEF
+ **********
+ **   63 **HESSE        1480
+ **********
+   START COVARIANCE MATRIX CALCULATION.
+ MINUIT WARNING IN HESSE   
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN HESSE   
+ ============== 8720.18 added to diagonal of error matrix
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         1.3340e-01  6.9996e-01  1.0000e+00  2.1666e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=79.8801 FROM HESSE     STATUS=OK             27 CALLS         205 TOTAL
+                     EDM=8.51226e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  p0           5.59027e+05   1.07105e-02   1.33282e-01   5.59027e+05
+   2  p1           5.64974e-01   1.99386e-06   1.34700e-07   5.64974e-01
+   3  p2           0.00000e+00   2.08994e+00   6.04602e-05   0.00000e+00
+   4  p3           9.99794e-04   1.17475e-07   1.04763e-08   9.99794e-04
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  1.147e-04  1.488e-10  4.084e-04  1.896e-11 
+  1.488e-10  3.975e-12  1.986e-06  5.252e-14 
+  4.084e-04  1.986e-06  4.368e+00  2.027e-07 
+  1.896e-11  5.252e-14  2.027e-07  1.380e-14 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.01836   1.000  0.007  0.018  0.015
+        2  0.56306   0.007  1.000  0.477  0.224
+        3  0.87810   0.018  0.477  1.000  0.826
+        4  0.84773   0.015  0.224  0.826  1.000
+ EXTERNAL ERROR MATRIX.    NDIM=   4    NPAR=  4    ERR DEF=0.5
+  1.147e-04  1.488e-10  4.084e-04  1.896e-11 
+  1.488e-10  3.975e-12  1.986e-06  5.252e-14 
+  4.084e-04  1.986e-06  4.368e+00  2.027e-07 
+  1.896e-11  5.252e-14  2.027e-07  1.380e-14 
+ FCN=79.8801 FROM HESSE     STATUS=OK             27 CALLS         205 TOTAL
+                     EDM=8.51226e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  p0           5.59027e+05   1.07105e-02                            
+   2  p1           5.64974e-01   1.99386e-06                            
+   3  p2           0.00000e+00   2.08994e+00                            
+   4  p3           9.99794e-04   1.17475e-07                            
+                               ERR DEF= 0.5
+------------------------------------------
+Enering ROOFIt-------
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.59027e+05  1.00000e-01     no limits
+     2 Q            5.65000e-01  1.00000e-01     no limits
+     3 theta        0.00000e+00  1.00000e-01     no limits
+     4 pileup       9.99794e-04  1.00000e-01     no limits
+ **********
+ **    1 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37857e+11 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59027e+05   1.00000e-01   1.00000e-01   3.12730e+00
+   2  Q            5.65000e-01   1.00000e-01   1.00000e-01   5.49333e+07
+   3  theta        0.00000e+00   1.00000e-01   1.00000e-01   0.00000e+00
+   4  pileup       9.99794e-04   1.00000e-01   1.00000e-01  -9.17914e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.8771e-02  3.4568e-01  9.1678e-01  2.7563e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.021527 TO DIAGONAL.
+ FCN=-2.37857e+11 FROM HESSE     STATUS=NOT POSDEF     27 CALLS          53 TOTAL
+                     EDM=4144.99    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59027e+05   6.11824e+01   2.66565e+00   3.12743e+00
+   2  Q            5.65000e-01   6.49261e-06   1.00000e-03   9.72609e+06
+   3  theta        0.00000e+00   6.88676e-03   1.00000e-01   0.00000e+00
+   4  pileup       9.99794e-04   9.17775e-08   1.00000e-02   8.71475e+07
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37857e+11 FROM MIGRAD    STATUS=FAILED         77 CALLS          78 TOTAL
+                     EDM=2.18765e+06    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58831e+05   1.55269e+01  -0.00000e+00  -2.86658e+00
+   2  Q            5.65020e-01   9.10791e-07  -0.00000e+00  -8.92659e+06
+   3  theta        2.07927e-02   3.60173e-04  -0.00000e+00   4.13522e+05
+   4  pileup       9.99805e-04   9.13947e-08  -0.00000e+00  -1.47355e+08
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  2.411e+02 -1.211e-05  1.984e-03 -2.810e-08 
+ -1.211e-05  8.295e-13 -4.296e-11 -5.646e-15 
+  1.984e-03 -4.296e-11  1.297e-07  4.128e-12 
+ -2.810e-08 -5.646e-15  4.128e-12  8.353e-15 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.89708   1.000 -0.856  0.355 -0.020
+        2  0.88318  -0.856  1.000 -0.131 -0.068
+        3  0.52340   0.355 -0.131  1.000  0.125
+        4  0.27092  -0.020 -0.068  0.125  1.000
+ ERR MATRIX NOT POS-DEF
+ **********
+ **    2 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37857e+11 FROM MIGRAD    STATUS=INITIATE       16 CALLS          94 TOTAL
+                     EDM=6.57617e+06    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58831e+05   1.55269e+01  -0.00000e+00  -2.86664e+00
+   2  Q            5.65020e-01   9.10791e-07  -0.00000e+00   1.59784e+09
+   3  theta        2.07927e-02   3.60173e-04  -0.00000e+00   1.76802e+05
+   4  pileup       9.99805e-04   9.13947e-08  -0.00000e+00  -1.46183e+08
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -8.7614e-02  4.6849e-01  6.6883e-01  2.9503e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.090564 TO DIAGONAL.
+ FCN=-2.37857e+11 FROM HESSE     STATUS=NOT POSDEF     31 CALLS         346 TOTAL
+                     EDM=2.07373    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58912e+05   8.72497e+00   1.72566e+03   1.66583e-01
+   2  Q            5.65011e-01   5.32124e-06   5.54886e-04   5.21642e+05
+   3  theta       -6.52107e-04   7.85109e-03   1.26695e-01   2.15161e+01
+   4  pileup       9.99888e-04   1.28456e-07   2.09862e-05   2.65043e+07
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.2285e-04  4.1088e-01  8.5292e-01  2.7363e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.002859 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37857e+11 FROM MIGRAD    STATUS=FAILED        352 CALLS         430 TOTAL
+                     EDM=0.0857347    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58910e+05   9.78909e+01   1.72564e+03  -2.57395e-02
+   2  Q            5.65011e-01   3.15839e-05   9.50155e-05  -7.75221e+04
+   3  theta       -1.25422e-03   1.99779e-03   5.31447e-02   1.20805e+01
+   4  pileup       9.99809e-04   1.02239e-07   2.09849e-05   3.17282e+06
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  9.583e+03 -3.079e-03 -5.848e-03  4.555e-08 
+ -3.079e-03  9.975e-10  4.881e-09 -3.109e-14 
+ -5.848e-03  4.881e-09  3.991e-06  8.236e-11 
+  4.555e-08 -3.109e-14  8.236e-11  1.045e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99726   1.000 -0.996 -0.030  0.005
+        2  0.99728  -0.996  1.000  0.077 -0.010
+        3  0.67666  -0.030  0.077  1.000  0.403
+        4  0.50913   0.005 -0.010  0.403  1.000
+ ERR MATRIX NOT POS-DEF
+status of the fit-----000------4
+1  558910
+2  0.565011
+3  -0.00125422
+4  0.000999809
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.58910e+05  1.00000e-01     no limits
+     2 Q            5.65011e-01  1.00000e-01     no limits
+     3 theta       -1.25422e-03  1.00000e-01     no limits
+     4 pileup       9.99809e-04  1.00000e-01     no limits
+ **********
+ **    3 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37857e+11 FROM MIGRAD    STATUS=INITIATE       14 CALLS         445 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58910e+05   1.00000e-01   1.00000e-01  -2.56328e-02
+   2  Q            5.65011e-01   1.00000e-01   1.00000e-01   6.86760e+06
+   3  theta       -1.25422e-03   1.00000e-01   1.00000e-01  -8.22441e+03
+   4  pileup       9.99809e-04   1.00000e-01   1.00000e-01  -9.18025e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2.37857e+11 FROM HESSE     STATUS=OK             29 CALLS         485 TOTAL
+                     EDM=0.0872336    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58910e+05   4.30323e+01   2.66509e+00  -2.55927e-02
+   2  Q            5.65011e-01   3.87150e-06   1.00000e-03  -7.75370e+04
+   3  theta       -1.25422e-03   3.34386e-03   1.00000e-01  -3.15655e+02
+   4  pileup       9.99809e-04   9.24341e-08   1.00000e-02   2.62557e+06
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37857e+11 FROM MIGRAD    STATUS=FAILED         99 CALLS         530 TOTAL
+                     EDM=1.07389e+06    STRATEGY= 1  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58911e+05   7.60695e+00  -0.00000e+00   1.24606e-02
+   2  Q            5.65011e-01   1.00000e+00  -0.00000e+00   8.87826e+08
+   3  theta       -1.24880e-03   1.00000e+00   0.00000e+00  -8.24513e+03
+   4  pileup       9.99805e-04   1.00000e+00   0.00000e+00  -2.51706e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  5.787e+01 -3.587e-09  1.968e-04 -1.888e-07 
+ -3.587e-09  1.000e+00 -1.860e-13  1.785e-16 
+  1.968e-04 -1.860e-13  1.000e+00 -8.602e-12 
+ -1.888e-07  1.785e-16 -8.602e-12  1.000e+00 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.00003   1.000 -0.000  0.000 -0.000
+        2  0.00000  -0.000  1.000 -0.000  0.000
+        3  0.00003   0.000 -0.000  1.000 -0.000
+        4  0.00000  -0.000  0.000 -0.000  1.000
+ ERR MATRIX APPROXIMATE
+ **********
+ **    4 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37857e+11 FROM MIGRAD    STATUS=INITIATE       12 CALLS         542 TOTAL
+                     EDM=1.03926e+15    STRATEGY= 1  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58911e+05   7.60695e+00  -0.00000e+00   6.35744e-03
+   2  Q            5.65011e-01   1.00000e+00  -0.00000e+00   4.11347e+04
+   3  theta       -1.24880e-03   1.00000e+00   0.00000e+00  -2.77603e+04
+   4  pileup       9.99805e-04   1.00000e+00   0.00000e+00  -2.51706e+07
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.4772e-03  3.7448e-01  8.4841e-01  2.7786e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.004256 TO DIAGONAL.
+ FCN=-2.37857e+11 FROM HESSE     STATUS=NOT POSDEF     29 CALLS         582 TOTAL
+                     EDM=0.0896288    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58911e+05   9.52658e+01   5.33018e+02   1.25079e-02
+   2  Q            5.65011e-01   3.18402e-05   9.50143e-05   4.10528e+04
+   3  theta       -1.24880e-03   7.35150e-04   1.85342e-01  -1.11289e+03
+   4  pileup       9.99805e-04   1.07577e-07   2.09850e-05   3.26482e+06
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37857e+11 FROM MIGRAD    STATUS=FAILED         97 CALLS         627 TOTAL
+                     EDM=1.72353e+08    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58912e+05   7.89795e+00  -0.00000e+00  -6.14854e-02
+   2  Q            5.65011e-01   1.00000e+00  -0.00000e+00   8.87447e+08
+   3  theta       -1.24027e-03   1.00000e+00   0.00000e+00  -2.73992e+04
+   4  pileup       9.99791e-04   1.00000e+00   0.00000e+00  -2.85910e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  6.238e+01  2.519e-09  1.613e-04 -2.702e-07 
+  2.519e-09  1.000e+00 -5.262e-14  8.380e-17 
+  1.613e-04 -5.262e-14  1.000e+00 -4.911e-12 
+ -2.702e-07  8.380e-17 -4.911e-12  1.000e+00 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.00002   1.000  0.000  0.000 -0.000
+        2  0.00000   0.000  1.000 -0.000  0.000
+        3  0.00002   0.000 -0.000  1.000 -0.000
+        4  0.00000  -0.000  0.000 -0.000  1.000
+ ERR MATRIX NOT POS-DEF
+status of the fit-----000------4
+1  558912
+2  0.565011
+3  -0.00124027
+4  0.000999791
+ **********
+ **   64 **SET PRINT           2
+ **********
+ **********
+ **   65 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 p0           5.58000e+05  1.67400e+05     no limits
+     2 p1           5.65000e-01  1.69500e-01     no limits
+     3 p2           0.00000e+00  3.00000e-01     no limits
+     4 p3           9.99871e-04  2.99961e-04     no limits
+ **********
+ **   66 **SET ERR         0.5
+ **********
+ **********
+ **   67 **SET PRINT           2
+ **********
+ **********
+ **   68 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **   69 **MIGRAD        1480        0.01
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-05
+ FCN=17175.3 FROM MIGRAD    STATUS=INITIATE       18 CALLS          19 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58000e+05   1.67400e+05   1.67400e+05  -3.61084e+01
+   2  p1           5.65000e-01   1.69500e-01   1.69500e-01  -1.12084e+08
+   3  p2           0.00000e+00   3.00000e-01   3.00000e-01   0.00000e+00
+   4  p3           9.99871e-04   2.99961e-04   2.99961e-04  -9.70751e+08
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+ FCN=520.423 FROM MIGRAD    STATUS=PROGRESS       34 CALLS          35 TOTAL
+                     EDM=1400.83    STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.58438e+05   1.67400e+05   4.37650e+02  -8.26874e-01
+   2  p1           5.65141e-01   1.69500e-01   1.41127e-04  -2.53806e+06
+   3  p2           0.00000e+00   3.00000e-01  -0.00000e+00   0.00000e+00
+   4  p3           1.00162e-03   2.99961e-04   1.74448e-06   4.13959e+08
+                               ERR DEF= 0.5
+ FCN=90.8956 FROM MIGRAD    STATUS=PROGRESS      154 CALLS         155 TOTAL
+                     EDM=2.17128e-05    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   6.5 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.59531e+05   1.03157e+03   6.09967e-01   3.35485e-04
+   2  p1           5.64814e-01   3.29810e-04  -1.96142e-07   1.03207e+03
+   3  p2           0.00000e+00   4.93146e-04  -0.00000e+00   0.00000e+00
+   4  p3           9.99714e-04   6.85382e-08   1.02143e-11   1.14349e+04
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         1.0345e-03  7.8711e-01  1.0254e+00  2.1865e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=90.8956 FROM HESSE     STATUS=OK             25 CALLS         182 TOTAL
+                     EDM=1.51919e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.59531e+05   1.12511e+02   2.66805e-01   3.30580e-04
+   2  p1           5.64814e-01   3.62891e-05   2.69324e-07   1.02652e+03
+   3  p2           0.00000e+00   1.13037e-02   7.76382e-05   0.00000e+00
+   4  p3           9.99714e-04   6.82265e-08   4.76701e-10   1.43923e+04
+                               ERR DEF= 0.5
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99896   1.000 -0.999  0.351  0.262
+        2  0.99897  -0.999  1.000 -0.351 -0.278
+        3  0.36262   0.351 -0.351  1.000  0.180
+        4  0.42574   0.262 -0.278  0.180  1.000
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=90.8956 FROM MIGRAD    STATUS=CONVERGED     182 CALLS         183 TOTAL
+                     EDM=1.51919e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.59531e+05   1.12511e+02  -0.00000e+00   3.30580e-04
+   2  p1           5.64814e-01   3.62891e-05   0.00000e+00   1.02652e+03
+   3  p2           0.00000e+00   1.13037e-02  -0.00000e+00   0.00000e+00
+   4  p3           9.99714e-04   6.82265e-08  -0.00000e+00   1.43923e+04
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  1.266e+04 -4.078e-03  4.458e-01  2.014e-06 
+ -4.078e-03  1.317e-09 -1.439e-07 -6.875e-13 
+  4.458e-01 -1.439e-07  1.278e-04  1.392e-10 
+  2.014e-06 -6.875e-13  1.392e-10  4.655e-15 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99896   1.000 -0.999  0.351  0.262
+        2  0.99897  -0.999  1.000 -0.351 -0.278
+        3  0.36262   0.351 -0.351  1.000  0.180
+        4  0.42574   0.262 -0.278  0.180  1.000
+ EXTERNAL ERROR MATRIX.    NDIM=   4    NPAR=  4    ERR DEF=0.5
+  1.266e+04 -4.078e-03  4.458e-01  2.014e-06 
+ -4.078e-03  1.317e-09 -1.439e-07 -6.875e-13 
+  4.458e-01 -1.439e-07  1.278e-04  1.392e-10 
+  2.014e-06 -6.875e-13  1.392e-10  4.655e-15 
+ FCN=90.8956 FROM MIGRAD    STATUS=CONVERGED     182 CALLS         183 TOTAL
+                     EDM=1.51919e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  p0           5.59531e+05   1.12511e+02                            
+   2  p1           5.64814e-01   3.62891e-05                            
+   3  p2           0.00000e+00   1.13037e-02                            
+   4  p3           9.99714e-04   6.82265e-08                            
+                               ERR DEF= 0.5
+------------------------------------------
+Enering ROOFIt-------
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.59531e+05  1.00000e-01     no limits
+     2 Q            5.65000e-01  1.00000e-01     no limits
+     3 theta        0.00000e+00  1.00000e-01     no limits
+     4 pileup       9.99714e-04  1.00000e-01     no limits
+ **********
+ **    1 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37858e+11 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59531e+05   1.00000e-01   1.00000e-01   2.20702e+01
+   2  Q            5.65000e-01   1.00000e-01   1.00000e-01   3.44588e+08
+   3  theta        0.00000e+00   1.00000e-01   1.00000e-01   0.00000e+00
+   4  pileup       9.99714e-04   1.00000e-01   1.00000e-01  -9.17247e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -8.7607e-01  1.4889e-01  9.1624e-01  3.8109e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.879877 TO DIAGONAL.
+ FCN=-2.37858e+11 FROM HESSE     STATUS=NOT POSDEF     27 CALLS          53 TOTAL
+                     EDM=204666    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.59531e+05   2.47747e+01   2.66805e+00   2.20704e+01
+   2  Q            5.65000e-01   4.34023e-06   1.00000e-03   6.87017e+07
+   3  theta        0.00000e+00   1.98781e-02   1.00000e-01   0.00000e+00
+   4  pileup       9.99714e-04   1.29139e-07   1.00000e-02   6.18633e+08
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.3932e-04  3.7965e-01  8.5192e-01  2.7686e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.002908 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37858e+11 FROM MIGRAD    STATUS=FAILED        194 CALLS         195 TOTAL
+                     EDM=0.332421    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58947e+05   9.72097e+01   1.72595e+03  -2.93449e-02
+   2  Q            5.65001e-01   3.14379e-05   9.41267e-05  -8.85828e+04
+   3  theta       -2.78868e-04   1.63129e-03   6.73248e-02  -3.14152e+01
+   4  pileup       9.99739e-04   1.03496e-07   2.09892e-05   7.46120e+06
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  9.450e+03 -3.043e-03 -1.126e-02 -1.444e-07 
+ -3.043e-03  9.883e-10  6.264e-09  3.981e-14 
+ -1.126e-02  6.264e-09  2.661e-06  7.221e-11 
+ -1.444e-07  3.981e-14  7.221e-11  1.071e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99723   1.000 -0.996 -0.071 -0.014
+        2  0.99726  -0.996  1.000  0.122  0.012
+        3  0.70482  -0.071  0.122  1.000  0.428
+        4  0.52645  -0.014  0.012  0.428  1.000
+ ERR MATRIX NOT POS-DEF
+ **********
+ **    2 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37858e+11 FROM MIGRAD    STATUS=INITIATE        8 CALLS         203 TOTAL
+                     EDM=7.43692    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58947e+05   9.72097e+01   1.72595e+03  -3.95833e-02
+   2  Q            5.65001e-01   3.14379e-05   9.41267e-05  -8.82554e+04
+   3  theta       -2.78868e-04   1.63129e-03   6.73248e-02  -3.30649e+03
+   4  pileup       9.99739e-04   1.03496e-07   2.09892e-05   2.94850e+06
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -5.7178e-04  3.7188e-01  8.5064e-01  2.7781e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.003350 TO DIAGONAL.
+ FCN=-2.37858e+11 FROM HESSE     STATUS=NOT POSDEF     29 CALLS         243 TOTAL
+                     EDM=0.165313    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58947e+05   9.63616e+01   6.90379e+02  -2.92559e-02
+   2  Q            5.65001e-01   3.15796e-05   1.88253e-04  -8.85682e+04
+   3  theta       -2.78868e-04   8.69321e-04   1.34650e-01  -1.31683e+02
+   4  pileup       9.99739e-04   1.04720e-07   8.39567e-06   7.49916e+06
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37858e+11 FROM MIGRAD    STATUS=FAILED         85 CALLS         280 TOTAL
+                     EDM=967323    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58952e+05   8.72704e+00   0.00000e+00  -7.40655e-02
+   2  Q            5.65000e-01   1.00000e+00   0.00000e+00  -6.38876e+07
+   3  theta       -3.15091e-04   1.00000e+00   0.00000e+00  -3.73545e+03
+   4  pileup       9.99699e-04   1.00000e+00   0.00000e+00  -2.96161e+07
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  7.616e+01  1.480e-07  6.388e-04 -4.826e-07 
+  1.480e-07  1.000e+00  3.508e-12 -4.749e-15 
+  6.388e-04  3.508e-12  1.000e+00 -9.532e-12 
+ -4.826e-07 -4.749e-15 -9.532e-12  1.000e+00 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.00007   1.000  0.000  0.000 -0.000
+        2  0.00000   0.000  1.000  0.000 -0.000
+        3  0.00007   0.000  0.000  1.000 -0.000
+        4  0.00000  -0.000 -0.000 -0.000  1.000
+ ERR MATRIX NOT POS-DEF
+status of the fit-----000------4
+1  558952
+2  0.565
+3  -0.000315091
+4  0.000999699
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 norm         5.58952e+05  1.00000e-01     no limits
+     2 Q            5.65000e-01  1.00000e-01     no limits
+     3 theta       -3.15091e-04  1.00000e-01     no limits
+     4 pileup       9.99699e-04  1.00000e-01     no limits
+ **********
+ **    3 **MIGRAD
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37858e+11 FROM MIGRAD    STATUS=INITIATE       14 CALLS         295 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58952e+05   1.00000e-01   1.00000e-01  -9.44626e-03
+   2  Q            5.65000e-01   1.00000e-01   1.00000e-01   6.36043e+06
+   3  theta       -3.15091e-04   1.00000e-01   1.00000e-01  -2.07140e+03
+   4  pileup       9.99699e-04   1.00000e-01   1.00000e-01  -9.18030e+11
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2.37858e+11 FROM HESSE     STATUS=OK             29 CALLS         335 TOTAL
+                     EDM=0.0118211    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58952e+05   6.58772e+01   2.66529e+00  -9.16001e-03
+   2  Q            5.65000e-01   6.15661e-06   1.00000e-03  -2.77697e+04
+   3  theta       -3.15091e-04   5.37057e-03   1.00000e-01  -8.27660e+01
+   4  pileup       9.99699e-04   9.24344e-08   1.00000e-02  -1.72066e+06
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -5.8963e-02  6.5780e-02  1.2851e+00  2.7081e+00
+ MINUIT WARNING IN MIGRAD  
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.061671 TO DIAGONAL.
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.5673e-03  3.6566e-01  8.4817e-01  2.7877e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.004355 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37858e+11 FROM MIGRAD    STATUS=FAILED        144 CALLS         425 TOTAL
+                     EDM=0.0251311    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58952e+05   9.50043e+01   5.33058e+02   2.44243e-03
+   2  Q            5.65000e-01   3.18137e-05   9.41226e-05   9.26250e+03
+   3  theta       -2.70457e-04   7.51826e-04   1.84787e-01  -2.43077e+02
+   4  pileup       9.99703e-04   1.08393e-07   2.09843e-05  -1.05406e+06
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  9.026e+03 -3.008e-03 -4.089e-02 -2.980e-06 
+ -3.008e-03  1.012e-09  1.474e-08  9.958e-13 
+ -4.089e-02  1.474e-08  5.652e-07  4.129e-11 
+ -2.980e-06  9.958e-13  4.129e-11  1.175e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99710   1.000 -0.995 -0.572 -0.289
+        2  0.99733  -0.995  1.000  0.616  0.289
+        3  0.82687  -0.572  0.616  1.000  0.507
+        4  0.58478  -0.289  0.289  0.507  1.000
+ ERR MATRIX NOT POS-DEF
+ **********
+ **    4 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2.37858e+11 FROM MIGRAD    STATUS=INITIATE        8 CALLS         433 TOTAL
+                     EDM=3.75175    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58952e+05   9.50043e+01   5.33058e+02   1.45615e-03
+   2  Q            5.65000e-01   3.18137e-05   9.41226e-05   9.58682e+03
+   3  theta       -2.70457e-04   7.51826e-04   1.84787e-01  -1.80967e+03
+   4  pileup       9.99703e-04   1.08393e-07   2.09843e-05  -2.83990e+07
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -2.8412e-04  3.7730e-01  8.5126e-01  2.7717e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.003056 TO DIAGONAL.
+ FCN=-2.37858e+11 FROM HESSE     STATUS=NOT POSDEF     29 CALLS         473 TOTAL
+                     EDM=0.00625771    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58952e+05   9.69351e+01   2.13223e+02   2.44207e-03
+   2  Q            5.65000e-01   3.14855e-05   1.88245e-04   9.27466e+03
+   3  theta       -2.70457e-04   1.10429e-03   1.00908e-01  -7.17785e+01
+   4  pileup       9.99703e-04   1.03779e-07   2.09843e-05  -1.05406e+06
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -2.5034e-03  2.8370e-03  1.8341e+00  2.1656e+00
+ MINUIT WARNING IN MIGRAD  
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.004669 TO DIAGONAL.
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.5815e-03  3.6574e-01  8.4863e-01  2.7872e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.004369 TO DIAGONAL.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-2.37858e+11 FROM MIGRAD    STATUS=FAILED        145 CALLS         570 TOTAL
+                     EDM=0.012611    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  norm         5.58953e+05   9.50641e+01   1.72577e+03  -2.40936e-03
+   2  Q            5.64999e-01   3.18071e-05   9.41225e-05  -5.55329e+03
+   3  theta       -2.74992e-04   7.51093e-04   1.83199e-01  -2.43004e+02
+   4  pileup       9.99704e-04   1.07896e-07   2.09844e-05   2.38633e+05
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=1
+  9.037e+03 -3.010e-03 -4.014e-02 -2.818e-06 
+ -3.010e-03  1.012e-09  1.448e-08  9.409e-13 
+ -4.014e-02  1.448e-08  5.641e-07  4.050e-11 
+ -2.818e-06  9.409e-13  4.050e-11  1.164e-14 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99710   1.000 -0.995 -0.562 -0.275
+        2  0.99732  -0.995  1.000  0.606  0.274
+        3  0.82322  -0.562  0.606  1.000  0.500
+        4  0.57958  -0.275  0.274  0.500  1.000
+ ERR MATRIX NOT POS-DEF
+status of the fit-----000------4
+1  558953
+2  0.564999
+3  -0.000274992
+4  0.000999704
